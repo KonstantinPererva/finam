@@ -1,2703 +1,586 @@
-body,html {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-    font-size: 14px;
-    min-width: 1340px;
-}
-
-h1,h2,h3,ul,ol,p {
-    padding: 0px;
-    margin: 0;
-}
-
-* {
-    resize: none;
-    outline: none
-}
-
-img {
-    border: none
-}
-
-p {
-    margin: 10px 0
-}
-
-table {
-    border-collapse: collapse
-}
-
-td {
-    margin: 0;
-    padding: 0
-}
-
-.clear {
-    clear: both
-}
-
-a {
-    color: #ed1f00;
-}
-
-a:hover {
-}
-
-p {
-    margin: 20px 0
-}
-
-.contentPart {
-    width: 970px;
-    margin: auto;
-    position: relative
-}
-
-header {
-    padding: 1px 0 0 0;
-    font-size: 14px;
-    background: #fff;
-    z-index: 3000;
-    height: 135px;
-    position: relative
-}
-
-header .headerInc {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    height: 137px;
-    background: #fff;
-}
-
-header .mainLogoBlock {
-    float: left;
-    margin: 0 40px 0 60px;
-    width: 70px;
-    height: 77px;
-    margin: 10px 0 0 0;
-    display: block
-}
-
-header .timeLine {
-    margin: 10px 0 0 160px;
-    text-align: right;
-}
-
-header .iconsLine {
-    margin-left: 130px;
-    margin-top: -33px;
-    position: relative;
-    z-index: 2002
-}
-
-header .iconsLine .item {
-    float: left;
-    margin: 0 33px 0 0;
-    color: #000000;
-    text-decoration: none;
-    line-height: 22px;
-    font-size: 13px
-}
-
-header .iconsLine .item.itemLast {
-    float: right;
-    margin-right: 16px
-}
-
-header .iconsLine .item:hover {
-    text-decoration: none;
-    color: #ed1f00
-}
-
-header .iconsLine .item .icon {
-    background: url(../img/icn-header/call.png) no-repeat center 2px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-    width: 20px;
-    height: 20px;
-    margin-right: 3px;
-}
-
-.timeIndicatorCover {
-    position: relative;
-    z-index: 5000
-}
-
-header .timeLine .timeIndicator {
-    margin: 15px 0 20px 0;
-    background: url(http://finam.kz/themes/classic/pic/arorw.png) no-repeat 100% 8px;
-    padding-right: 20px;
-    cursor: pointer;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-}
-
-header .iconsLine .item .icon.icon2 {
-    background: url(../img/icn-header/phone.png) no-repeat center 2px
-}
-
-header .iconsLine .item .icon.icon3 {
-    background: url(../img/icn-header/email.png) no-repeat center 4px
-}
-
-header .iconsLine .item .icon.icon4 {
-    background: url(../img/icn-header/contacts.png) no-repeat center 2px
-}
-
-header .iconsLine .item .icon.icon5 {
-    background: url(../img/icn-header/client.png) no-repeat center 2px
-}
-
-header .iconsLine .item .icon.icon6 {
-    background: url(../img/icn-header/skype.png) no-repeat center 2px
-}
-
-.mainMenu {
-    background: url(http://finam.kz/themes/classic/pic/mainMenu.png);
-    height: 40px;
-    position: relative;
-    z-index: 2000
-}
-
-.mainMenu .item {
-    background: url(http://finam.kz/themes/classic/pic/mainMenuHover.png) 0 -500px repeat-x;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    font-size: 12px;
-    padding: 0 25px;
-    display: block;
-    text-decoration: none;
-    border-left: solid transparent 1px;
-    border-right: solid transparent 1px;
-}
-
-.mainMenu .itemCover:hover .item {
-    background-color: #000;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.mainMenu .item.specItem {
-    background-position: 0 0;
-    border-left: solid #ff4b33 1px;
-    border-right: solid #d41c00 1px;
-}
-
-.mainMenu table {
-    float: right
-}
-
-.mainMenu .itemCover {
-    position: relative
-}
-
-.mainMenu .itemCover:hover .secondPart {
-    display: block
-}
-
-.mainMenu .secondPart {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background: #000;
-    padding: 15px;
-    font-size: 12px;
-    display: none
-}
-
-.mainMenu .secondPart .topBgTitle {
-    background: #fff;
-    color: #000;
-    display: block;
-    padding: 2px 0 2px 10px;
-    margin-bottom: 8px
-}
-
-.mainMenu .secondPart a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    min-width: 150px;
-    padding-left: 10px;
-    margin: 3px 0
-}
-
-.mainMenu .secondPart a:hover {
-    text-decoration: none;
-    color: #f47b53
-}
-
-.mainMenu .secondPart td {
-    vertical-align: top;
-    padding-right: 10px
-}
-
-.secondLineBg {
-    background: url(http://finam.kz/themes/classic/pic/secondLineBg.jpg) no-repeat 50% 0;
-    height: 516px;
-    margin: 1px 0 0 0;
-    background-size: cover;
-}
-
-.secondLineBg .contentPart {
-    background: rgba(255,255,255,0.85);
-    padding: 40px 0 0 0;
-    min-height: 476px
-}
-
-.secondLineBg .shadowBottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: url(http://finam.kz/themes/classic/pic/shadowBottom.png) 50% 0 no-repeat;
-    width: 100%;
-    height: 13px
-}
-
-.secondLineBg .sectionAdv {
-    position: relative;
-    left: 27px;
-    margin: 0 0 30px 0
-}
-
-.secondLineBg .sectionAdv .item {
-    float: left;
-    width: 280px;
-    margin: 0 20px
-}
-
-.secondLineBg .sectionAdv .item .image {
-    text-align: center;
-    height: 160px;
-    overflow: hidden;
-    position: relative;
-    left: -20px
-}
-
-.secondLineBg .sectionAdv .item .title {
-    color: #000000;
-    font-size: 20px;
-    display: block;
-    margin: 0 0 5px 0
-}
-
-.secondLineBg .sectionAdv .item .text {
-    font-size: 14px;
-    padding: 10px 50px 20px 0;
-    border-right: solid #cccccc 1px;
-}
-
-.secondLineBg .sectionAdv .item .text .links {
-    margin: 20px 0 0 0
-}
-
-.secondLineBg .sectionAdv .item .text .links a {
-    display: block;
-    margin: 0;
-    line-height: 22px;
-    text-decoration: none
-}
-
-.secondLineBg .sectionAdv .item .text .links a:hover {
-    color: #000
-}
-
-.secondLineBg .sectionAdv .item.last .text {
-    font-size: 14px;
-    padding: 10px 50px 20px 0;
-    border-right: none
-}
-
-.redBtn {
-    background: #ee2000;
-    color: #fff;
-    font-size: 14px;
-    padding: 0 30px;
-    height: 38px;
-    line-height: 38px;
-    border: solid #ff4b33 1px;
-    border-bottom: solid #d41c00 1px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.redBtn:hover {
-    background: #ed4025
-}
-
-.redBtn:active {
-    background: #ed4025;
-    border-bottom: solid #d41c00 3px;
-    height: 36px;
-    line-height: 42px
-}
-
-.redBtnSmall {
-    background: #ee2000;
-    color: #fff;
-    font-size: 14px;
-    padding: 0 20px;
-    height: 30px;
-    line-height: 30px;
-    border: solid #ff4b33 1px;
-    border-bottom: solid #d41c00 1px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.redBtnSmall:hover {
-    background: #ed4025
-}
-
-.redBtnSmall:active {
-    background: #ed4025;
-    border-bottom: solid #d41c00 3px;
-    height: 36px;
-    line-height: 42px
-}
-
-.programmsList .redBtnSmall {
-    margin-left: 10px
-}
-
-.finamForEverybody {
-    background: url(http://finam.kz/themes/classic/pic/thirdLineBg.png);
-    padding: 40px 0 50px 0
-}
-
-.finamForEverybody .title {
-    font-size: 30px;
-    margin: 0 0 25px 0
-}
-
-.finamForEverybody a {
-    font-size: 14px;
-    line-height: 22px;
-    text-decoration: none;
-    display: block
-}
-
-.finamForEverybody a:hover {
-    color: #000
-}
-
-.finamForEverybody table {
-    width: 100%;
-    position: relative;
-    left: 45px
-}
-
-.finamForEverybody td {
-    vertical-align: top;
-    width: 300px
-}
-
-.MPImageLine {
-    background: url(http://finam.kz/themes/classic/pic/finamLineWithImage.jpg) 50% 0 fixed;
-    background-size: cover;
-    min-height: 600px;
-    padding: 20px 0;
-}
-
-.MPImageLine .lineTitle {
-    color: #fff;
-    font-size: 50px;
-    margin: 0 0 30px 0
-}
-
-.finamIsBetter {
-    width: 985px
-}
-
-.finamIsBetter .item {
-    background: #fff url(http://finam.kz/themes/classic/pic/aboutUsIcons/1.png) no-repeat 0 0;
-    padding: 1px;
-    border-bottom: solid 2px #f1592b;
-    height: 240px;
-    float: left;
-    width: 475px;
-    margin: 0 10px 10px 0
-}
-
-.finamIsBetter .item .title {
-    font-size: 30px;
-    color: #000;
-    margin: 0 0 20px 0
-}
-
-.finamIsBetter .item .textBlock {
-    margin: 20px 40px 0 150px;
-    font-size: 12px
-}
-
-.finamIsBetter .item.specialBlock {
-    text-align: center
-}
-
-.finamIsBetter .item.specialBlock .textBlock {
-    margin: 40px 90px;
-    text-align: left
-}
-
-.finamIsBetter .item.specialBlock .textBlock .redBtn {
-    margin: 22px 0
-}
-
-.callBackLine {
-    background: url(http://finam.kz/themes/classic/pic/redFinam.png);
-    padding: 20px 0 40px 0
-}
-
-.callBackLine .lineTitle {
-    color: #fff;
-    font-size: 30px;
-    margin: 0px 0 30px 20px
-}
-
-.callBackLine input[type='text'] {
-    width: 370px;
-    padding: 0 30px;
-    height: 40px;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 5px;
-    font-style: italic;
-    margin-bottom: 10px
-}
-
-.callBackLine textarea {
-    width: 370px;
-    padding: 10px 30px;
-    height: 90px;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 5px;
-    font-style: italic;
-    margin-bottom: 10px
-}
-
-.callBackLine td {
-    padding-right: 30px;
-    vertical-align: top;
-    white-space: nowrap
-}
-
-.callBackLine td .captchaCode a {
-    display: none
-}
-
-.captchaCode input[type=text] {
-    width: 90px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; }
-
-.captchaCode img {
-    height: 44px;
-    margin: 0 12px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1;}
-
-.whiteBtn {
-    background: #fff;
-    color: #000;
-    font-size: 14px;
-    padding: 0 30px;
-    height: 44px;
-    line-height: 44px;
-    border: solid #e6e6e6 1px;
-    border-bottom: solid #b3b3b3 1px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.whiteBtn:hover {
-    background: #fafafa
-}
-
-.whiteBtn:active {
-    background: #fafafa;
-    border-bottom: solid #b3b3b3 3px;
-    height: 42px;
-    line-height: 46px
-}
-
-.finamLightGreyBlock {
-    background: url(http://finam.kz/themes/classic/pic/finamGreyBg.png);
-    padding: 20px 0 40px 0
-}
-
-.finamLightGreyBlock .contentPart {
-    background: rgba(255,255,255,0.85);
-    padding: 0px 0 10px 0;
-}
-
-.createAccount .item {
-    border: solid #ed1f00 1px;
-    width: 392px;
-    padding: 25px;
-    float: left;
-    margin: 20px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    min-height: 510px
-}
-
-.createAccount .item .image {
-    text-align: center;
-    padding: 25px 0 0 0;
-    margin: 0 0 15px 0;
-    height: 230px
-}
-
-.createAccount .item .title {
-    text-align: center;
-    color: #ed1f00;
-    font-size: 30px;
-}
-
-.createAccount .item .text {
-    font-size: 14px;
-    color: #000000;
-    margin: 25px 0 40px 0;
-    height: 75px
-}
-
-.createAccount .topTtile {
-    font-size: 30px;
-    color: #ed1f00;
-    margin: 20px 20px
-}
-
-.callBackTable {
-    margin: 0 20px 20px 20px
-}
-
-.callBackTable input[type=text] {
-    width: 300px;
-    padding: 0 30px;
-    height: 35px;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 5px;
-    font-style: italic;
-    margin-right: 20px;
-    vertical-align: top
-}
-
-.callBackTable .redBtn {
-    vertical-align: top;
-    margin-top: 0
-}
-
-.tradeProgramms {
-    padding: 40px 20px 20px 20px
-}
-
-.TopTextTitle {
-}
-
-.TopTextTitle .title {
-    font-size: 30px;
-    color: #ed1f00;
-    width: 470px;
-    float: left;
-}
-
-.TopTextTitle .textBlock {
-    font-size: 14px;
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
-    float: left;
-    width: 400px;
-    margin-left: 30px;
-    line-height: 22px
-}
-
-.tradeProgramms .itemsCover {
-    text-align: center;
-    margin: 40px 0 25px 0
-}
-
-.tradeProgramms .item {
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 10px;
-    width: 120px;
-    color: #010101;
-    font-size: 16px;
-    text-decoration: none
-}
-
-.tradeProgramms .item .image {
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 120px;
-    height: 120px;
-    position: relative
-}
-
-.tradeProgramms .item .image img {
-    max-width: 120px;
-    max-height: 120px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: url(grayscale.svg);
-    /* Firefox 4+ */
-    filter: gray;
-    /* IE 6-9 */
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-.tradeProgramms .item .image img:hover {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: grayscale(0%);
-    filter: none /* IE 6-9 */
-}
-
-.tradeProgramms .item .titleLink {
-    color: #010101;
-    font-size: 16px;
-    text-decoration: none
-}
-
-.tradeProgramms .item:hover .titleLink {
-    color: #ed1f00
-}
-
-.ourPartnersLine {
-    background: #ebebeb;
-    padding: 20px 0 10px 0;
-    margin: 0px 0 0 0
-}
-
-.ourPartnersLine .topTitle {
-    font-size: 30px;
-    color: #000000;
-    margin: 15px 0 0 0
-}
-
-.ourPartnersLine .item {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 30px 20px 0;
-    position: relative
-}
-
-.ourPartnersLine .item img {
-    max-height: 191px;
-}
-
-footer {
-    background: #010101;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    color: #fff;
-    position: relative;
-    z-index: 3002
-}
-
-footer .contentPart {
-    width: 790px;
-    padding: 30px 0 50px 0
-}
-
-footer a {
-    color: #ed1f00;
-    text-decoration: none
-}
-
-footer a:hover {
-    text-decoration: underline
-}
-
-footer table {
-    width: 100%
-}
-
-footer table .titleTd {
-    border-bottom: solid #fff 1px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-footer table td {
-    vertical-align: top;
-    padding-right: 30px
-}
-
-footer .socBlock {
-    margin: 30px 0 0 0
-}
-
-footer .socBlock .item {
-    background: url(http://finam.kz/themes/classic/pic/socIcons.png);
-    width: 29px;
-    height: 29px;
-    display: inline-block;
-    margin: 8px 10px 0 0;
-    border-radius: 4px
-}
-
-footer .socBlock .item.item1 {
-    background-position: 100% 0
-}
-
-footer .socBlock .item.item2 {
-    background: url(http://finam.kz/pic/inst.png);
-    background-size: cover
-}
-
-footer .socBlock .item:hover {
-    opacity: 0.6
-}
-
-footer .develope {
-    margin: 30px 0 0 0
-}
-
-.timeIndicator {
-    position: relative;
-    z-index: 20
-}
-
-.popUpTimeZone {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    background: #fff;
-    border: solid #e3e3e3 1px;
-    border-bottom: none;
-    display: none
-}
-
-.popUpTimeZone .zoneItem {
-    border-bottom: solid #e3e3e3 1px;
-    width: 200px;
-    line-height: 22px;
-    text-align: right;
-    padding: 5px 10px 5px 5px
-}
-
-.popUpTimeZone .zoneItem:hover {
-    background: #eeeeee
-}
-
-.popUpTimeZone .zoneItem.active {
-    display: none
-}
-
-.regionSpan {
-    margin: 0 5px
-}
-
-.scrollTopBtn {
-    background: rgba(0,0,0,0.2);
-    position: fixed;
-    bottom: 50px;
-    left: 20px;
-    height: 40px;
-    width: 150px;
-    cursor: pointer;
-    z-index: 3001;
-    display: none;
-    border-radius: 24px;
-}
-
-.scrollTopBtn .text {
-    background: url(http://finam.kz/themes/classic/pic/scrollTop.png) no-repeat 81% 15px;
-    font-size: 16px;
-    display: inline-block;
-    height: 30px;
-    line-height: 40px;
-    vertical-align: middle;
-    text-align: center;
-    width: 100%;
-    color: #000;
-    min-width: 30px
-}
-
-.scrollTopBtn.hiddenLIne {
-    display: none!important
-}
-
-.scrollTopBtn.backToBottom {
-    display: block!important
-}
-
-.scrollTopBtn.backToBottom .text {
-    background: url(http://finam.kz/themes/classic/pic/scrollTop.png) no-repeat 0 -12px;
-}
-
-.mapBlock {
-    background: url(http://finam.kz/themes/classic/pic/map/wholeMap.png);
-    width: 556px;
-    height: 319px;
-    position: relative;
-    margin: 40px 0;
-    float: left;
-}
-
-.mapBlock .item {
-    width: 556px;
-    height: 319px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    display: none
-}
-
-.imageMapConteinier {
-    width: 556px;
-    height: 319px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 41;
-    position: relative;
-}
-
-.regionImgs {
-}
-
-.europeRound {
-    position: absolute;
-    left: 236px;
-    top: 67px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    border-radius: 200px;
-    width: 90px;
-    height: 90px;
-    border: dashed #666 1px;
-    text-align: center;
-    z-index: 42;
-    overflow: visible!important
-}
-
-.europeRound img.europeWhole {
-    height: 0px;
-    display: inline-block;
-    vertical-align: middle
-}
-
-.europeRound img.europeEmpty {
-    position: absolute;
-    z-index: 42;
-    left: 0;
-    top: 0;
-    height: 0px;
-}
-
-.europeRound img.europeWhole {
-    position: relative;
-}
-
-.mapBlock .europeRound .item {
-    width: 191px;
-    height: 191px;
-    position: absolute;
-    left: 5px;
-    top: 0;
-    z-index: 2;
-    display: none
-}
-
-.europeRound.hovered {
-    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
-    border: none
-}
-
-.itemText {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    background: #000;
-    color: #fff;
-    font-size: 10px;
-    line-height: 14px;
-    padding: 0 5px;
-    z-index: 40;
-    display: none
-}
-
-.mapDiscription {
-    float: left;
-    width: 300px;
-    padding: 40px 0 15px 0;
-    margin: 0 0 0 92px
-}
-
-.mapDiscription .title {
-    color: #ee2000;
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0 0 20px;
-    0}
-
-ul.styledUl {
-    margin: 20px 0
-}
-
-ul.styledUl li {
-    list-style: none;
-    background: url(http://finam.kz/themes/classic/pic/liDot.png) 0 10px no-repeat;
-    padding-left: 15px;
-    margin: 10px 0
-}
-
-.mapLine {
-    position: relative;
-    z-index: 10
-}
-
-.redBordered {
-    border-top: solid #ee2000 2px;
-    -webkit-box-shadow: 0 -2px 8px 8px rgba(0,0,0,0.1);
-    box-shadow: 0 -2px 8px 8px rgba(0,0,0,0.1);
-}
-
-.finamForEverybody.redBordered a {
-    display: inline-block
-}
-
-.finamForEverybody.redBordered .verticalSeporator {
-    display: inline-block;
-    height: 170px;
-    border-left: solid #bfbfbf 2px;
-    margin: 0 20px;
-    vertical-align: middle;
-    position: relative;
-    top: 15px
-}
-
-.finamForEverybody.redBordered .textCover {
-    display: inline-block;
-    vertical-align: middle;
-    width: 440px
-}
-
-.finamPluses {
-    background: url(http://finam.kz/themes/classic/pic/plusesBg1.png) 50% -30px fixed ;
-}
-
-.finamPlusesinc {
-    background: url(http://finam.kz/themes/classic/pic/plusesBgNew.jpg) 50% 0px ;
-    padding: 40px 0
-}
-
-.finamPluses .topTitle {
-    color: #ee2000;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 0 40px 0
-}
-
-.finamPluses .secondTitle {
-    font-size: 30px;
-    color: #000000;
-    margin: 0 0 40px 0
-}
-
-.finamPluses td {
-    padding-right: 90px;
-    vertical-align: top
-}
-
-.leftSide {
-    width: 715px;
-    float: left;
-}
-
-.rightSide {
-    width: 240px;
-    float: left;
-    margin: 0 0 0 15px
-}
-
-h1 {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin: 15px 0
-}
-
-h2 {
-    font-size: 20px;
-    color: #ee2000;
-    font-weight: 400;
-    margin: 15px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.lineSeporate {
-    border-top: solid #cccccc 1px;
-    border-bottom: solid #e6e6e6 1px;
-    margin: 20px 0
-}
-
-.courseAdv {
-    margin-right: -20px;
-    margin: 10px -20px 40px 0
-}
-
-.courseAdv .item {
-    background: url(http://finam.kz/themes/classic/pic/courseAdvCover.png) no-repeat;
-    width: 240px;
-    display: inline-block;
-    margin: 20px 0;
-    vertical-align: top
-}
-
-.courseAdv .itemInc {
-    background: url(http://finam.kz/themes/classic/pic/courseAdvCoverBottom.png) no-repeat 0 100%;
-    min-height: 300px;
-    padding: 25px
-}
-
-.courseAdv .itemInc .title {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-.courseAdv .itemInc .lineSeporate {
-    margin: 10px 0 15px 0
-}
-
-.courseAdv .itemInc .photoTeatcher {
-    margin: 5px 0
-}
-
-.courseAdv .itemInc .photoTeatcherName {
-    text-align: center;
-    font-size: 14px;
-    margin: 10px 0
-}
-
-.courseAdv .itemInc p {
-    margin: 15px 0
-}
-
-.courseAdv .lineSeporate {
-    margin: 10px 0 20px 0
-}
-
-.backToList {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-.backToList:hover {
-    text-decoration: underline
-}
-
-.rightSide .courseAdv .item .title {
-    text-align: center
-}
-
-.topBorderedTitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    border-bottom: solid 6px #cd2505;
-    line-height: 35px;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0 40px 0;
-    max-width: 540px
-}
-
-.tradeSoft {
-    margin: 30px 0;
-    padding: 10px 50px 10px 10px
-}
-
-.tradeSoft .leftBlock {
-    float: left;
-    width: 230px;
-}
-
-.tradeSoft .leftBlock .image {
-    height: 230px;
-    position: relative;
-    border: solid #ebebeb 1px;
-    overflow: hidden;
-    background: #fff
-}
-
-.tradeSoft .leftBlock .image img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.tradeSoft .leftBlock .discr {
-    background: #ee2000;
-    padding: 20px 20px 1px 20px;
-    text-align: center
-}
-
-.tradeSoft .leftBlock .greyBtn {
-    width: 130px;
-    margin-bottom: 20px
-}
-
-.tradeSoft .rightBlockDiscr .redBtn {
-    float: right;
-    margin-top: 20px
-}
-
-.tradeSoft .rightBlockDiscr {
-    margin-left: 270px;
-}
-
-.tradeSoft .rightBlockDiscr .title {
-    font-size: 18px;
-    color: #ee2000;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 0 20px 0
-}
-
-.greyBtn {
-    background: #fff;
-    color: #000;
-    font-size: 14px;
-    padding: 0 30px;
-    height: 38px;
-    line-height: 38px;
-    border: solid #b2b2b2 1px;
-    border-top: solid #e5e5e5 1px;
-    display: inline-block;
-    vertical-align: top;
-    zoom:1; *display: inline;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.greyBtn:hover {
-    background: #f6f6f6
-}
-
-.greyBtn:active {
-    background: #e7e7e7;
-    border-bottom: solid #e5e5e5 3px;
-    height: 36px;
-    line-height: 42px
-}
-
-.finamShadowTop {
-    position: absolute;
-    left: 0;
-    top: -13px;
-    background: url(http://finam.kz/themes/classic/pic/shadowBottom.png) 50% 0 no-repeat;
-    width: 100%;
-    height: 13px
-}
-
-.contactsPage .leftBlock {
-    float: left;
-    width: 305px;
-}
-
-.contactsPage .rightBlockDiscr {
-    margin-left: 400px;
-    font-size: 16px;
-    position: relative;
-    top: -3px;
-    line-height: 24px
-}
-
-.contactsPage {
-    padding: 10px 50px 10px 10px;
-    margin: 30px 0;
-}
-
-input[type='text'].finamInputText, input[type='password'].finamInputText {
-    width: 280px;
-    padding: 0 10px;
-    height: 40px;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 5px;
-    font-style: italic;
-    margin-bottom: 15px
-}
-
-textarea.finamTextArea {
-    width: 280px;
-    padding: 10px;
-    height: 120px;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 5px;
-    font-style: italic;
-    margin-bottom: 15px
-}
-
-.createAnAccount {
-    background: url(http://finam.kz/themes/classic/pic/createAccountPage.png);
-}
-
-.createAnAccount .contentPart {
-    width: 470px;
-    text-align: center
-}
-
-.programmsList {
-    padding: 0 40px
-}
-
-.programmsList .item {
-    margin: 10px 0
-}
-
-.programmsList .item .image {
-    display: inline-block!important;
-    width: 170px;
-    overflow: hidden;
-    margin: 0 30px 0 0;
-    vertical-align: top
-}
-
-.programmsList .item .image img {
-    max-width: 170px
-}
-
-.programmsList .item .discr {
-    display: inline-block;
-    width: 340px;
-    vertical-align: top
-}
-
-.programmsList .item .discr .title {
-    font-size: 18px;
-    color: #ee2000;
-    margin: 0 20px 0 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.programmsList .item .buttonsBlock {
-    display: inline-block;
-    width: 310px;
-    vertical-align: bottom;
-    margin: 0 0 0 30px ;
-    padding-bottom: 15px;
-    vertical-align: top
-}
-
-.libraryList {
-    padding: 0 40px;
-    text-align: center
-}
-
-.libraryList .item {
-    display: inline-block;
-    margin: 0 60px;
-    width: 160px;
-    text-align: left;
-    margin-bottom: 50px;
-    vertical-align: top
-}
-
-.libraryList .item .image {
-    height: 210px;
-    text-align: center;
-    background: url(http://finam.kz/themes/classic/pic/bookExampleCover.png);
-    position: relative
-}
-
-.libraryList .item .image img {
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    width: 148px;
-    height: 198px
-}
-
-.libraryList .bookDiscr {
-    min-height: 90px;
-}
-
-.programmsList .item .image {
-    display: inline-block!important;
-    width: 160px;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.programmsList .item .image img {
-    max-width: 160px;
-    max-height: 200px
-}
-
-.redSpan {
-    color: #ee2000
-}
-
-.pagerBlock {
-    margin: 30px 0;
-    text-align: center
-}
-
-.pagerBlock .item {
-    display: inline-block;
-    background: #cccccc;
-    font-size: 14px;
-    width: 30px;
-    height: 30px;
-    margin: 0 2px;
-    text-decoration: none;
-    color: #000;
-    line-height: 30px
-}
-
-.pagerBlock .item:hover {
-    color: #fff;
-    background: #ee2000
-}
-
-.pagerBlock .item.active {
-    color: #fff;
-    background: #ee2000
-}
-
-.downloadDoc {
-    background: url(http://finam.kz/themes/classic/pic/pdfDocDownLoad.png) no-repeat 0 100%;
-    padding: 0 0 0 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 9px 0
-}
-
-.downloadPDF {
-    background: url(http://finam.kz/themes/classic/pic/pdfDocDownLoad.png) no-repeat 0 -1px;
-    padding: 0 0 0 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 9px 0
-}
-
-.downloadDoc:hover, .downloadPDF:hover {
-    text-decoration: underline
-}
-
-.reglamentPage {
-    padding: 0 40px
-}
-
-.finamForEverybody.RFEdition {
-    background: url(http://finam.kz/themes/classic/pic/RFLine.png) no-repeat 0 0px;
-    height: 497px;
-}
-
-.finamForEverybody.RFEdition .itemBG {
-    background: #fff;
-    padding: 20px;
-    margin: 30px 15px 0 15px;
-    min-height: 240px
-}
-
-.finamForEverybody.RFEdition table {
-    left: 0
-}
-
-.smallTitle {
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.finamForEverybody.RFEdition .redBtn {
-    margin: 30px 0;
-    display: inline-block;
-    line-height: 40px
-}
-
-.finamForEverybody.RFEdition .redBtn:hover {
-    color: #fff;
-    line-height: 42px
-}
-
-.bonusLIst .topTtile {
-    text-align: center;
-    color: #000000;
-    font-size: 30px;
-    margin: 0 0 30px 0;
-    background: #fff
-}
-
-.bonusLIst {
-    position: relative;
-    margin: 0 0 30px 0;
-    left: 5px
-}
-
-.bonusLIst .item {
-    display: inline-block;
-    width: 280px;
-    margin: 0 20px;
-    vertical-align: top;
-    min-height: 300px
-}
-
-.bonusLIst .item .image {
-    text-align: center;
-    height: 160px;
-    overflow: hidden;
-    position: relative;
-    left: -20px;
-    margin-bottom: 30px
-}
-
-.bonusLIst .item .image img {
-    max-height: 160px;
-    max-width: 260px
-}
-
-.bonusLIst .item .title {
-    color: #000000;
-    font-size: 30px;
-    display: block;
-    margin: 0 0 5px 0
-}
-
-.bonusLIst .item .text {
-    font-size: 14px;
-    padding: 10px 50px 20px 0;
-    height: 70px
-}
-
-.bonusLIst .item .text .links {
-    margin: 20px 0 0 0
-}
-
-.bonusLIst .item .text .links a {
-    display: block;
-    margin: 0;
-    line-height: 22px;
-    text-decoration: none
-}
-
-.bonusLIst .item .text .links a:hover {
-    color: #000
-}
-
-.bonusLIst .item.last .text {
-    font-size: 14px;
-    padding: 10px 50px 20px 0;
-    border-right: none
-}
-
-.bonusLIst .item center {
-    margin: 20px 0 0 0
-}
-
-.bonusLIst .bonusTitle {
-    font-size: 50px;
-    margin: 0px 0 80px 0;
-    text-align: center
-}
-
-.bonusLIst .item center .redBtn {
-    width: 280px;
-    padding: 0
-}
-
-.currencyMarketBlock {
-    background: url(http://finam.kz/themes/classic/pic/RfSecLine.png) repeat-y 50% 0 fixed;
-    padding: 30px 0;
-}
-
-.currencyMarketBlock .contentPart {
-    background: rgba(255,255,255,1);
-    padding: 30px 0 30px 0;
-    min-height: 200px;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-    padding: 20px 20px 40px 20px;
-    width: 930px
-}
-
-.currencyTabsLine {
-    border-bottom: solid #cccccc 6px;
-    margin: 0 -10px
-}
-
-.currencyTabsLine table {
-    width: 100%
-}
-
-.currencyTabsLine .item {
-    position: relative;
-    top: 6px;
-    border-bottom: solid transparent 6px;
-    font-size: 18px;
-    text-align: center;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    line-height: 50px;
-    cursor: pointer
-}
-
-.currencyTabsLine .item.active {
-    border-bottom: solid #cd2505 6px;
-    color: #000000
-}
-
-.currencyTabsLine .item:hover {
-    border-bottom: solid #cd2505 6px;
-    color: #000000
-}
-
-.greyColor {
-    color: #6e6e6e
-}
-
-.currencyContentConteinier {
-    margin: 50px 0;
-    padding: 0 120px 0 0
-}
-
-.currencyContent {
-    display: none
-}
-
-.unitedAcount {
-    background: url(http://finam.kz/themes/classic/pic/unitedAccount.png);
-}
-
-.unitedAcount .contentPart {
-    background: rgba(0,0,0,0.5);
-    padding: 10px 0 10px 0;
-    height: 322px;
-    width: 870px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 30px;
-    color: #fff
-}
-
-.unitedAcount .contentPart .topBgTitle {
-    color: #ffffff;
-    font-size: 60px;
-    font-family: 'Roboto', sans-serif;
-    margin: 50px 0 20px 0;
-    font-weight: 400
-}
-
-.textPage {
-    padding: 0 20px
-}
-
-.datepickerWeek .ui-datepicker-calendar tr:hover {
-    background: #e1e1e1
-}
-
+body,html{ padding:0; margin:0; font-family: 'Roboto', sans-serif; color:#000; font-size:14px;min-width: 1340px;}
+h1,h2,h3,ul,ol,p{ padding:0px; margin:0;}
+*{resize:none; outline:none}
+img{border:none}
+p{ margin:10px 0}
+table{ border-collapse:collapse}
+td{ margin:0; padding:0}
+.clear{ clear:both}
+
+a{ color:#ed1f00; }
+a:hover{}
+p{ margin:20px 0}
+
+.contentPart{ width:970px; margin:auto; position:relative}
+
+header{ padding:1px 0 0 0; font-size:14px; background:#fff; z-index:3000; height:135px; position:relative }
+header .headerInc{position:fixed; width:100%; left:0; top:0; height:137px; background:#fff;}
+header .mainLogoBlock{ float:left; margin:0 40px 0 60px; width:70px; height:77px; margin:10px 0 0 0; display:block  }
+header .timeLine{ margin:10px 0 0 160px; text-align:right; }
+header .iconsLine{margin-left:130px; margin-top:-33px; position:relative; z-index:2002}
+header .iconsLine .item{ float:left; margin:0 33px 0 0; color:#000000; text-decoration:none; line-height:22px; font-size:13px}
+header .iconsLine .item.itemLast{ float:right; margin-right:16px}
+header .iconsLine .item:hover{ text-decoration:none; color:#ed1f00}
+header .iconsLine .item .icon{ background: url(../img/icn-header/call.png) no-repeat center 2px; display:inline-block; vertical-align:top; zoom:1; *display:inline; width:20px; height:20px; margin-right: 3px;}
+
+.timeIndicatorCover{ position:relative; z-index:5000}
+
+header .timeLine .timeIndicator{ margin:15px 0  20px 0; background:url(http://finam.kz/themes/classic/pic/arorw.png) no-repeat 100% 8px; padding-right:20px; cursor:pointer; text-align:left; display:inline-block; vertical-align:top; zoom:1; *display:inline;}
+
+header .iconsLine .item .icon.icon2{ background: url(../img/icn-header/phone.png) no-repeat center 2px}
+header .iconsLine .item .icon.icon3{ background: url(../img/icn-header/email.png) no-repeat center 4px}
+header .iconsLine .item .icon.icon4{ background: url(../img/icn-header/contacts.png) no-repeat center 2px}
+header .iconsLine .item .icon.icon5{ background: url(../img/icn-header/client.png) no-repeat center 2px}
+header .iconsLine .item .icon.icon6{ background: url(../img/icn-header/skype.png) no-repeat center 2px}
+
+.mainMenu{ background:url(http://finam.kz/themes/classic/pic/mainMenu.png); height:40px; position: relative; z-index:2000}
+.mainMenu .item{ background:url(http://finam.kz/themes/classic/pic/mainMenuHover.png) 0 -500px repeat-x; height:40px; line-height:40px; color:#fff; font-size:12px; padding:0 25px; display:block; text-decoration:none; border-left:solid transparent 1px; border-right:solid transparent 1px; }
+
+.mainMenu .itemCover:hover .item{ background-color:#000; text-shadow:1px 1px 1px #000;  }
+.mainMenu .item.specItem{ background-position:0 0; border-left:solid #ff4b33 1px; border-right:solid #d41c00 1px;  }
+.mainMenu table{ float:right}
+
+.mainMenu .itemCover{ position:relative}
+.mainMenu .itemCover:hover .secondPart{ display:block}
+.mainMenu .secondPart{ position:absolute; top:40px; right:0; background:#000; padding:15px; font-size:12px; display:none}
+.mainMenu .secondPart .topBgTitle{ background:#fff; color:#000; display:block; padding:2px 0 2px 10px; margin-bottom:8px}
+.mainMenu .secondPart a{ color:#fff; text-decoration:none; display:inline-block; min-width:150px; padding-left:10px; margin:3px 0 }
+.mainMenu .secondPart a:hover{ text-decoration:none; color:#f47b53}
+.mainMenu .secondPart td{ vertical-align:top; padding-right:10px}
+
+.secondLineBg{ background:url(http://finam.kz/themes/classic/pic/secondLineBg.jpg) no-repeat 50% 0; height:516px; margin:1px 0  0 0;  background-size:cover;}
+.secondLineBg .contentPart{ background:rgba(255,255,255,0.85); padding:40px  0 0 0; min-height:476px}
+.secondLineBg .shadowBottom{ position:absolute; left:0; bottom:0; background:url(http://finam.kz/themes/classic/pic/shadowBottom.png) 50% 0 no-repeat; width:100%; height:13px}
+
+.secondLineBg .sectionAdv{ position:relative; left:27px; margin:0  0 30px 0}
+.secondLineBg .sectionAdv .item{ float:left; width:280px; margin:0 20px }
+.secondLineBg .sectionAdv .item .image{ text-align:center; height:160px; overflow:hidden; position:relative; left:-20px}
+.secondLineBg .sectionAdv .item .title{ color:#000000; font-size:20px; display:block; margin:0 0 5px 0}
+.secondLineBg .sectionAdv .item .text{ font-size:14px; padding:10px 50px 20px 0; border-right:solid #cccccc 1px;}
+.secondLineBg .sectionAdv .item .text .links{ margin:20px 0 0 0}
+.secondLineBg .sectionAdv .item .text .links a{ display:block; margin:0; line-height:22px; text-decoration:none}
+.secondLineBg .sectionAdv .item .text .links a:hover{ color:#000}
+.secondLineBg .sectionAdv .item.last .text{ font-size:14px; padding:10px 50px 20px 0; border-right:none}
+
+.redBtn{ background:#ee2000; color: #fff; font-size:14px; padding:0 30px; height:38px; line-height:38px; border:solid #ff4b33 1px; border-bottom:solid #d41c00 1px; display:inline-block; vertical-align:top; zoom:1; *display:inline; text-decoration:none; -webkit-appearance: none;-moz-appearance: none;appearance: none; }
+.redBtn:hover{ background:#ed4025}
+.redBtn:active{ background:#ed4025; border-bottom:solid #d41c00 3px; height:36px; line-height:42px}
+
+.redBtnSmall{ background:#ee2000; color: #fff; font-size:14px; padding:0 20px; height:30px; line-height:30px; border:solid #ff4b33 1px; border-bottom:solid #d41c00 1px; display:inline-block; vertical-align:top; zoom:1; *display:inline; text-decoration:none; -webkit-appearance: none;-moz-appearance: none;appearance: none; }
+.redBtnSmall:hover{ background:#ed4025}
+.redBtnSmall:active{ background:#ed4025; border-bottom:solid #d41c00 3px; height:36px; line-height:42px}
+
+.programmsList .redBtnSmall{ margin-left:10px}
+
+.finamForEverybody{ background:url(http://finam.kz/themes/classic/pic/thirdLineBg.png); padding:40px 0 50px 0}
+.finamForEverybody .title{ font-size:30px; margin:0 0 25px 0}
+.finamForEverybody a{ font-size:14px; line-height:22px; text-decoration:none; display:block}
+.finamForEverybody a:hover{ color:#000}
+.finamForEverybody table{ width:100%; position:relative; left:45px}
+.finamForEverybody td{ vertical-align:top; width:300px}
+
+.MPImageLine{ background:url(http://finam.kz/themes/classic/pic/finamLineWithImage.jpg) 50% 0 fixed; background-size:cover; min-height:600px; padding:20px 0;  }
+.MPImageLine .lineTitle{ color:#fff; font-size:50px; margin:0 0 30px 0}
+
+.finamIsBetter{ width:985px}
+.finamIsBetter .item{ background:#fff url(http://finam.kz/themes/classic/pic/aboutUsIcons/1.png) no-repeat 0 0; padding:1px; border-bottom:solid 2px #f1592b; height:240px; float:left; width:475px; margin:0 10px 10px 0  }
+.finamIsBetter .item .title{ font-size:30px; color:#000; margin: 0 0 20px 0}
+.finamIsBetter .item .textBlock{ margin:20px 40px 0  150px; font-size:12px}
+.finamIsBetter .item.specialBlock{ text-align:center}
+.finamIsBetter .item.specialBlock .textBlock{ margin:40px 90px; text-align:left}
+.finamIsBetter .item.specialBlock .textBlock .redBtn{ margin:22px 0}
+
+
+.callBackLine{ background:url(http://finam.kz/themes/classic/pic/redFinam.png); padding:20px 0 40px 0}
+.callBackLine .lineTitle{ color:#fff; font-size:30px; margin:0px 0 30px 20px}
+.callBackLine input[type='text']{ width:370px; padding:0 30px; height:40px; color:#000; font-size:16px; font-family: 'Roboto', sans-serif; margin-right:5px; font-style:italic; margin-bottom:10px} 
+.callBackLine textarea{ width:370px; padding:10px 30px; height:90px; color:#000; font-size:16px; font-family: 'Roboto', sans-serif; margin-right:5px; font-style:italic; margin-bottom:10px} 
+.callBackLine td{ padding-right:30px; vertical-align:top; white-space:nowrap}
+.callBackLine td .captchaCode a{ display:none}
+
+.captchaCode input[type=text]{ width:90px; display:inline-block; vertical-align:top; zoom:1; }
+.captchaCode img{ height:44px; margin:0 12px; display:inline-block; vertical-align:top; zoom:1;}
+
+.whiteBtn{ background:#fff; color: #000; font-size:14px; padding:0 30px; height:44px; line-height:44px; border:solid #e6e6e6 1px; border-bottom:solid #b3b3b3 1px; display:inline-block; vertical-align:top; zoom:1; *display:inline; text-decoration:none; font-family: 'Roboto', sans-serif; -webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.whiteBtn:hover{ background:#fafafa}
+.whiteBtn:active{ background:#fafafa; border-bottom:solid #b3b3b3 3px; height:42px; line-height:46px}
+
+.finamLightGreyBlock{ background:url(http://finam.kz/themes/classic/pic/finamGreyBg.png); padding:20px 0 40px 0}
+.finamLightGreyBlock .contentPart{ background:rgba(255,255,255,0.85); padding:0px  0 10px 0; }
+
+.createAccount .item{ border:solid #ed1f00 1px; width:392px; padding:25px; float:left; margin:20px; -webkit-border-radius: 10px;border-radius: 10px; min-height:510px  }
+.createAccount .item .image{ text-align:center; padding:25px 0 0 0; margin:0 0 15px 0; height:230px}
+.createAccount .item .title{ text-align:center; color:#ed1f00; font-size:30px; }
+.createAccount .item .text{ font-size:14px; color:#000000; margin:25px 0 40px 0; height:75px}
+
+.createAccount .topTtile{ font-size:30px; color:#ed1f00; margin:20px 20px}
+
+.callBackTable{ margin:0 20px 20px 20px }
+.callBackTable input[type=text]{ width:300px; padding:0 30px; height:35px; color:#000; font-size:16px; font-family: 'Roboto', sans-serif; margin-right:5px; font-style:italic;  margin-right:20px; vertical-align:top}
+.callBackTable .redBtn{ vertical-align:top; margin-top:0}
+
+.tradeProgramms{ padding: 40px 20px 20px 20px}
+.TopTextTitle{}
+.TopTextTitle .title{ font-size:30px; color:#ed1f00; width:470px; float:left; }
+.TopTextTitle .textBlock{ font-size:14px; color:#000000; font-family: 'Roboto', sans-serif; float:left; width:400px; margin-left:30px; line-height:22px}
+.tradeProgramms .itemsCover{ text-align:center; margin:40px 0 25px 0}
+.tradeProgramms .item { display:inline-block; vertical-align:top; margin:20px 10px; width:120px; color:#010101; font-size:16px; text-decoration:none }
+.tradeProgramms .item  .image{ margin-bottom:10px; overflow:hidden; width:120px; height:120px; position:relative}
+.tradeProgramms .item  .image img{ max-width:120px; max-height:120px; position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto; -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);  -ms-filter: grayscale(100%);  -o-filter: grayscale(100%);  filter: grayscale(100%);  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */-webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease;-o-transition: all 200ms ease;
+transition: all 200ms ease;}
+  .tradeProgramms .item  .image img:hover{-webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);  -ms-filter: grayscale(0%);  -o-filter: grayscale(0%);  filter: grayscale(0%);   filter:none /* IE 6-9 */}
+  
+.tradeProgramms .item  .titleLink{ color:#010101; font-size:16px; text-decoration:none  }
+.tradeProgramms .item:hover  .titleLink{ color:#ed1f00}
+
+
+.ourPartnersLine{ background:#ebebeb; padding:20px 0 10px 0; margin:0px 0 0 0 }
+.ourPartnersLine .topTitle{ font-size:30px; color:#000000; margin:15px 0 0 0}
+.ourPartnersLine .item{display:inline-block; vertical-align:middle; margin:20px 30px 20px 0;  position:relative }
+.ourPartnersLine .item img{ max-height:191px;  }
+
+footer{ background:#010101; font-family: 'Roboto', sans-serif; font-size:14px; line-height:30px; color:#fff; position:relative; z-index:3002 }
+footer .contentPart{ width:790px; padding:30px 0 50px 0 }
+footer a{ color:#ed1f00; text-decoration:none}
+footer a:hover{ text-decoration:underline}
+footer table{ width:100%}
+footer table .titleTd{ border-bottom:solid #fff 1px; margin-bottom:10px; display:inline-block;  }
+footer table td{ vertical-align:top; padding-right:30px}
+
+footer .socBlock{ margin:30px 0 0 0 }
+footer .socBlock .item{ background:url(http://finam.kz/themes/classic/pic/socIcons.png);  width:29px; height:29px; display:inline-block; margin:8px 10px 0 0; border-radius:4px}
+footer .socBlock .item.item1{ background-position:100% 0 }
+footer .socBlock .item.item2{ background:url(http://finam.kz/pic/inst.png); background-size:cover }
+footer .socBlock .item:hover{ opacity:0.6}
+footer .develope{ margin:30px 0 0 0}
+
+.timeIndicator{ position:relative; z-index:20}
+.popUpTimeZone{ position:absolute; top:30px; right:0; background:#fff; border:solid #e3e3e3 1px; border-bottom:none; display:none}
+.popUpTimeZone .zoneItem{ border-bottom:solid #e3e3e3 1px; width:200px; line-height:22px; text-align:right; padding:5px 10px 5px 5px }
+.popUpTimeZone .zoneItem:hover{ background:#eeeeee}
+.popUpTimeZone .zoneItem.active{ display:none}
+
+.regionSpan{ margin:0 5px }
+
+.scrollTopBtn{ 
+	background:rgba(0,0,0,0.2); 
+	position:fixed;
+	bottom: 50px; 
+	left:20px; 
+	height:40px; 
+	width:150px; 
+	cursor:pointer; 
+	z-index:3001; 
+	display:none;
+	border-radius: 24px;
+}
+.scrollTopBtn .text{ 
+	background:url(http://finam.kz/themes/classic/pic/scrollTop.png) no-repeat 81% 15px;  
+	font-size:16px; 
+	display:inline-block; 
+	height:30px;
+ 	line-height:40px;
+ 	vertical-align: middle;
+ 	text-align: center;
+ 	width: 100%; 
+ 	color:#000; 
+ 	min-width:30px  
+}
+
+.scrollTopBtn.hiddenLIne{ display:none!important}
+.scrollTopBtn.backToBottom{ display:block!important}
+.scrollTopBtn.backToBottom .text{background:url(http://finam.kz/themes/classic/pic/scrollTop.png) no-repeat 0 -12px; }
+
+.mapBlock{  background:url(http://finam.kz/themes/classic/pic/map/wholeMap.png); width:556px; height:319px; position:relative; margin:40px 0; float:left;}
+.mapBlock .item{width:556px; height:319px; position:absolute; left:0; top:0; z-index:2; display:none }
+.imageMapConteinier{ width:556px; height:319px; position:absolute; left:0; top:0; z-index:41; position:relative; }	
+.regionImgs{}
+.europeRound{ position: absolute; left: 236px; top: 67px; -webkit-border-radius: 200px; -moz-border-radius: 200px; border-radius: 200px; width: 90px; height: 90px; border: dashed #666 1px; text-align: center; z-index:42; overflow:visible!important  }
+.europeRound img.europeWhole{ height:0px;  display:inline-block; vertical-align:middle }
+.europeRound img.europeEmpty{ position:absolute; z-index:42; left:0; top:0; height:0px; }
+.europeRound img.europeWhole{ position:relative; }
+.mapBlock .europeRound .item{width:191px; height:191px; position:absolute; left:5px; top:0; z-index:2; display:none }
+.europeRound.hovered{-webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);box-shadow: 0 0 5px 5px rgba(0,0,0,0.1); border:none}
+
+.itemText{ position:absolute; left:50px; top:50px; background:#000; color:#fff; font-size:10px; line-height:14px; padding:0 5px; z-index:40; display:none }
+
+.mapDiscription{ float:left; width:300px; padding:40px 0 15px 0; margin:0 0 0 92px}
+.mapDiscription .title{ color:#ee2000; font-size:16px; line-height:22px; margin:0 0 20px; 0}
+
+ul.styledUl{ margin:20px 0}
+ul.styledUl li{ list-style:none; background:url(http://finam.kz/themes/classic/pic/liDot.png) 0 10px no-repeat; padding-left:15px; margin:10px 0 }
+
+.mapLine{ position:relative; z-index:10}
+
+.redBordered{ border-top:solid #ee2000 2px; -webkit-box-shadow: 0 -2px 8px 8px rgba(0,0,0,0.1);
+box-shadow: 0 -2px 8px 8px rgba(0,0,0,0.1);}
+
+.finamForEverybody.redBordered a{ display:inline-block}
+
+.finamForEverybody.redBordered .verticalSeporator{ display:inline-block; height:170px; border-left:solid #bfbfbf 2px; margin:0 20px; vertical-align:middle; position:relative; top:15px  }
+.finamForEverybody.redBordered .textCover{display:inline-block; vertical-align:middle; width:440px}
+
+.finamPluses{ background:url(http://finam.kz/themes/classic/pic/plusesBg1.png) 50% -30px fixed ; }
+.finamPlusesinc{background:url(http://finam.kz/themes/classic/pic/plusesBgNew.jpg) 50% 0px  ; padding:40px 0 } 
+.finamPluses .topTitle{ color:#ee2000; font-size:40px; font-family: 'Roboto', sans-serif; margin: 0 0 40px 0 }
+.finamPluses .secondTitle{ font-size:30px; color:#000000; margin:0 0 40px 0 }
+.finamPluses td{ padding-right:90px; vertical-align:top}
+
+.leftSide{ width:715px; float:left; }
+.rightSide{ width:240px; float:left; margin:0 0 0 15px }
+
+h1{ font-size:30px; font-family: 'Roboto', sans-serif; font-weight:400; margin:15px 0}
+h2{ font-size:20px; color:#ee2000; font-weight:400; margin:15px 0;  font-family: 'Roboto', sans-serif; }
+
+.lineSeporate{ border-top:solid #cccccc 1px; border-bottom:solid #e6e6e6 1px; margin:20px 0}
+
+.courseAdv{ margin-right:-20px; margin:10px -20px 40px 0}
+.courseAdv .item{ background:url(http://finam.kz/themes/classic/pic/courseAdvCover.png) no-repeat; width:240px; display:inline-block; margin:20px 0; vertical-align:top }
+.courseAdv .itemInc{ background:url(http://finam.kz/themes/classic/pic/courseAdvCoverBottom.png) no-repeat 0 100%; min-height:300px; padding:25px}
+.courseAdv .itemInc .title{font-size:20px; font-family: 'Roboto', sans-serif; font-weight:400;}
+.courseAdv .itemInc  .lineSeporate{ margin:10px 0 15px 0}
+.courseAdv .itemInc .photoTeatcher{ margin:5px 0}
+.courseAdv .itemInc .photoTeatcherName{ text-align:center; font-size:14px; margin:10px 0} 
+.courseAdv .itemInc p{ margin:15px 0}
+
+.courseAdv .lineSeporate{ margin:10px 0 20px 0}
+
+.backToList{ text-decoration:none;font-family: 'Roboto', sans-serif;}
+.backToList:hover{ text-decoration:underline}
+
+.rightSide .courseAdv .item .title{ text-align:center}
+
+.topBorderedTitle{font-family: 'Roboto', sans-serif; font-size:18px; border-bottom: solid 6px #cd2505; line-height:35px; display:inline-block; padding:10px 20px; margin:20px 0 40px 0; max-width:540px}
+
+.tradeSoft{ margin:30px 0; padding:10px 50px 10px 10px}
+.tradeSoft .leftBlock{ float:left; width:230px; }
+.tradeSoft .leftBlock .image{height:230px; position:relative; border:solid #ebebeb 1px; overflow:hidden; background:#fff}
+.tradeSoft .leftBlock .image img{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.tradeSoft .leftBlock .discr{ background:#ee2000; padding:20px 20px 1px 20px; text-align:center}
+.tradeSoft .leftBlock .greyBtn{ width:130px; margin-bottom:20px}
+.tradeSoft .rightBlockDiscr .redBtn{ float:right; margin-top:20px}
+
+.tradeSoft .rightBlockDiscr{ margin-left:270px; }
+.tradeSoft .rightBlockDiscr .title{ font-size:18px; color:#ee2000; font-family: 'Roboto', sans-serif; margin:0 0 20px 0}
+
+.greyBtn{ background:#fff; color: #000; font-size:14px; padding:0 30px; height:38px; line-height:38px; border:solid #b2b2b2 1px; border-top:solid #e5e5e5 1px; display:inline-block; vertical-align:top; zoom:1; *display:inline; text-decoration:none; -webkit-appearance: none;-moz-appearance: none;appearance: none; }
+.greyBtn:hover{ background:#f6f6f6}
+.greyBtn:active{ background:#e7e7e7; border-bottom:solid #e5e5e5 3px; height:36px; line-height:42px}
+
+.finamShadowTop{ position:absolute; left:0; top:-13px; background:url(http://finam.kz/themes/classic/pic/shadowBottom.png) 50% 0 no-repeat; width:100%; height:13px}
+
+.contactsPage .leftBlock{ float:left; width:305px; }
+.contactsPage .rightBlockDiscr{ margin-left:400px; font-size:16px; position:relative; top:-3px; line-height:24px}
+.contactsPage{ padding:10px 50px 10px 10px; margin:30px 0;}
+
+input[type='text'].finamInputText, input[type='password'].finamInputText{ width:280px; padding:0 10px; height:40px; color:#000; font-size:16px; font-family: 'Roboto', sans-serif; margin-right:5px; font-style:italic; margin-bottom:15px} 
+textarea.finamTextArea{ width:280px; padding:10px; height:120px; color:#000; font-size:16px; font-family: 'Roboto', sans-serif; margin-right:5px; font-style:italic; margin-bottom:15px} 
+
+.createAnAccount{ background:url(http://finam.kz/themes/classic/pic/createAccountPage.png); }
+.createAnAccount .contentPart{ width:470px; text-align:center}
+
+.programmsList{ padding: 0  40px}
+.programmsList .item{margin:10px 0 }
+.programmsList .item .image{ display:inline-block!important; width:170px; overflow:hidden; margin:0 30px 0 0; vertical-align:top }
+.programmsList .item .image img{ max-width:170px}
+.programmsList .item .discr{ display:inline-block; width:340px; vertical-align:top}
+.programmsList .item .discr .title{ font-size:18px; color:#ee2000; margin:0 20px 0 0; font-family: 'Roboto', sans-serif;}
+.programmsList .item .buttonsBlock{ display:inline-block; width:310px; vertical-align:bottom; margin:0 0 0 30px ; padding-bottom:15px; vertical-align:top}
+
+.libraryList{ padding:0 40px; text-align:center}
+.libraryList .item{display:inline-block; margin:0 60px; width:160px; text-align:left; margin-bottom:50px; vertical-align:top}
+.libraryList .item .image{ height:210px; text-align:center; background:url(http://finam.kz/themes/classic/pic/bookExampleCover.png); position:relative }
+.libraryList .item .image img{ position:absolute; left:1px; top:1px; width:148px; height:198px}
+
+.libraryList  .bookDiscr{ min-height:90px; }
+
+.programmsList .item .image{ display:inline-block!important;  width:160px; overflow:hidden; text-align:center; margin-bottom:10px; }
+.programmsList .item .image img{ max-width:160px; max-height:200px}
+
+.redSpan{ color:#ee2000}
+
+.pagerBlock{ margin:30px 0; text-align:center}
+.pagerBlock .item{display:inline-block; background:#cccccc; font-size:14px; width:30px; height:30px; margin:0 2px; text-decoration:none; color:#000; line-height:30px}
+.pagerBlock .item:hover{ color:#fff; background:#ee2000}
+.pagerBlock .item.active{ color:#fff; background:#ee2000}
+
+
+.downloadDoc{ background:url(http://finam.kz/themes/classic/pic/pdfDocDownLoad.png) no-repeat 0 100%; padding: 0 0  0 30px; text-decoration:none; display:inline-block; margin:9px 0  }
+.downloadPDF{ background:url(http://finam.kz/themes/classic/pic/pdfDocDownLoad.png) no-repeat 0 -1px; padding: 0 0  0 30px; text-decoration:none; display:inline-block; margin:9px 0}
+.downloadDoc:hover, .downloadPDF:hover{ text-decoration:underline}
+
+.reglamentPage{ padding:0 40px}
+
+.finamForEverybody.RFEdition{ background:url(http://finam.kz/themes/classic/pic/RFLine.png) no-repeat  0 0px; height:497px; }
+
+.finamForEverybody.RFEdition .itemBG{ background:#fff; padding:20px; margin:30px  15px 0 15px; min-height:240px}
+.finamForEverybody.RFEdition table{ left:0}
+.smallTitle{ margin:15px 0; font-size:20px; }
+
+.finamForEverybody.RFEdition .redBtn{ margin:30px 0; display:inline-block; line-height:40px}
+.finamForEverybody.RFEdition .redBtn:hover{ color:#fff; line-height:42px}
+
+.bonusLIst .topTtile{ text-align:center; color:#000000; font-size:30px; margin:0 0 30px 0; background:#fff}
+.bonusLIst{ position:relative;  margin:0  0 30px 0; left:5px}
+.bonusLIst .item{ display:inline-block; width:280px; margin:0 20px; vertical-align:top; min-height:300px }
+.bonusLIst .item .image{ text-align:center; height:160px; overflow:hidden; position:relative; left:-20px; margin-bottom:30px}
+.bonusLIst .item .image img{ max-height:160px; max-width:260px}
+.bonusLIst .item .title{ color:#000000; font-size:30px; display:block; margin:0 0 5px 0}
+.bonusLIst .item .text{ font-size:14px; padding:10px 50px 20px 0; height:70px }
+.bonusLIst .item .text .links{ margin:20px 0 0 0}
+.bonusLIst .item .text .links a{ display:block; margin:0; line-height:22px; text-decoration:none}
+.bonusLIst .item .text .links a:hover{ color:#000}
+.bonusLIst .item.last .text{ font-size:14px; padding:10px 50px 20px 0; border-right:none}
+.bonusLIst .item center{ margin:20px 0 0 0}
+
+.bonusLIst  .bonusTitle{ font-size:50px; margin:0px 0 80px 0; text-align:center}
+
+.bonusLIst .item center .redBtn{ width:280px; padding:0}
+
+.currencyMarketBlock{ background:url(http://finam.kz/themes/classic/pic/RfSecLine.png) repeat-y 50% 0 fixed; padding:30px 0;  }
+.currencyMarketBlock .contentPart{ background:rgba(255,255,255,1); padding:30px  0 30px 0; min-height:200px; -webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px; padding:20px 20px 40px 20px; width:930px}
+
+.currencyTabsLine{ border-bottom:solid #cccccc 6px; margin:0 -10px}
+.currencyTabsLine table{ width:100%}
+.currencyTabsLine .item{ position:relative; top:6px; border-bottom:solid transparent 6px; font-size:18px; text-align:center; color:#999999; font-family: 'Roboto', sans-serif; line-height:50px; cursor:pointer }
+.currencyTabsLine .item.active{ border-bottom:solid #cd2505 6px;  color:#000000}
+.currencyTabsLine .item:hover{ border-bottom:solid #cd2505 6px;  color:#000000}
+
+.greyColor{ color:#6e6e6e}
+
+.currencyContentConteinier{ margin:50px 0; padding:0 120px 0 0}
+.currencyContent{ display:none}
+
+.unitedAcount{ background:url(http://finam.kz/themes/classic/pic/unitedAccount.png); }
+.unitedAcount .contentPart{ background:rgba(0,0,0,0.5); padding:10px  0 10px 0; height:322px; width:870px; text-align:center; line-height:50px; font-size:30px; color:#fff}
+.unitedAcount .contentPart .topBgTitle{ color:#ffffff; font-size:60px; font-family: 'Roboto', sans-serif; margin:50px 0 20px 0; font-weight:400}
+
+.textPage{ padding:0 20px}
+
+.datepickerWeek .ui-datepicker-calendar tr:hover{ background:#e1e1e1}
 .datepickerWeek .ui-widget-header .ui-state-focus {
-    border: 1px solid transparent;
-    background: transparent 50% 50% repeat-x;
-    font-weight: bold;
-    color: #fff;
-}
-
-.courseFormBlock.courseAdv .itemInc .title {
-    margin-bottom: 25px
-}
-
-.courseFormBlock .finamInputText.required {
-    height: 30px;
-    width: 168px;
-    border: solid #ee2000 1px;
-    font-size: 14px;
-    color: #000000;
-    font-style: italic
-}
-
-.courseFormBlock .finamTextArea {
-    height: 90px;
-    width: 168px;
-    font-size: 14px;
-    color: #000000;
-    font-style: italic;
-    font-family: 'Roboto', sans-serif;
-}
-
-.requiredText {
-    font-size: 10px;
-    margin: 2px 0 10px 0
-}
-
-.requiredText:before {
-    content: ' ';
-    display: inline-block;
-    width: 8px;
-    height: 4px;
-    border: solid #ee2000 1px;
-    font-size: 10px;
-    margin-right: 3px
-}
-
-.reviewsLine {
-    background: #ee2000 url(http://finam.kz/themes/classic/pic/reviewBg.png);
-    position: relative;
-    padding: 30px 0 45px 0
-}
-
-.reviewsLine:before {
-    content: ' ';
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: url(http://finam.kz/themes/classic/pic/reviewListShadowTop.png) 50% 0 no-repeat;
-    height: 13px
-}
-
-.reviewsLine:after {
-    content: ' ';
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat;
-    height: 13px
-}
-
-.reviewsLine .topTitle {
-    color: #fff;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 0 30px 0
-}
-
-.reviewsBlock {
-    position: relative;
-    width: 790px;
-    margin: auto;
-    height: 410px;
-}
-
-.reviewsBlock .topBtn {
-    background: url(http://finam.kz/themes/classic/pic/btnsrevewsSlider.png);
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    right: -60px;
-    top: 10px;
-    border: none;
-    padding: none
-}
-
-.reviewsBlock .btmBtn {
-    background: url(http://finam.kz/themes/classic/pic/btnsrevewsSlider.png) 0 100% no-repeat;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    right: -60px;
-    top: 380px;
-    overflow: hidden ;
-    border: none;
-    padding: none
-}
-
-.reviewsBlock .topBtn:hover, .reviewsBlock .btmBtn:hover {
-    opacity: 0.6
-}
-
-.reviewsBlock .item {
-    background: #fff;
-    padding: 10px;
-    height: 180px;
-    margin: 10px 0
-}
-
-.reviewsBlock .item .image {
-    height: 180px;
-    overflow: hidden;
-    width: 160px;
-    float: left
-}
-
-.reviewsBlock .item .image img {
-    max-height: 180px;
-    max-width: 160px
-}
-
-.reviewsBlock .item .discr {
-    margin-left: 200px
-}
-
-.reviewsBlock .item .discr .title {
-    color: #ee2000;
-    font-size: 30px;
-    margin: 0 0 15px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.reviewsBlockInc {
-    position: relative;
-    overflow: hidden;
-    height: 420px
-}
-
-.reviewsBlockIncInc {
-    position: relative
-}
-
-.coursesTable {
-    width: 100%
-}
-
-.coursesTable th {
-    text-align: left;
-    font-weight: 400;
-    padding: 10px 0 0 0
-}
-
-.coursesTable th div {
-    background: #d7d7d7;
-    padding: 15px 10px;
-    margin-right: 10px;
-    height: 20px;
-    white-space: nowrap
-}
-
-.coursesTable td {
-    border-bottom: solid #cccccc 2px;
-    padding: 10px 10px 20px 10px
-}
-
-.coursesTable tr:hover {
-    background: #f2f2f2
-}
-
-.freeBtn {
-    position: relative;
-    top: 7px;
-}
-
-.secondLineBg.forexAdv {
-    padding-bottom: 0;
-}
-
-.secondLineBg.forexAdv .sectionAdv {
-    padding: 0 0 30px 0;
-    margin-bottom: 0
-}
-
-.secondLineBg.forexAdv .sectionAdv .item .title {
-    font-size: 30px
-}
-
-.forexAdv {
-    background: #fff;
-    height: auto;
-    padding-bottom: 30px
-}
-
-.secondLineBg.forexAdv .sectionAdv .item .text {
-    height: 140px;
-}
-
-.secondLineBg.forexAdv .sectionAdv .item {
-    height: 600px
-}
-
-.secondLineBg.forexAdv .sectionAdv .item img {
-    position: relative;
-    left: -25px
-}
-
-.secondLineBg.forexAdv .sectionAdv .item img {
-    position: relative
-}
-
-.secondLineBg.forexAdv .sectionAdv .item.last img {
-    top: 20px
-}
-
-.secondLineBg.forexAdv .callBackCover {
-    -webkit-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.2);
-    box-shadow: 0 2px 10px 2px rgba(0,0,0,0.2);
-    padding: 10px;
-    margin: 0 0 50px 0
-}
-
-.secondLineBg.forexAdv .topTtile {
-    font-size: 30px;
-    color: #ee2000;
-    margin: 0 0 30px 50px
-}
-
-.secondLineBg.forexAdv .shadowBottom {
-    bottom: -50px
-}
-
-.tariffsLine {
-    background: url(http://finam.kz/themes/classic/pic/redFinam.png);
-    padding: 20px 0
-}
-
-.tariffsLine .topTitle {
-    font-size: 40px;
-    color: #ffffff;
-    margin: 15px 0 10px 0;
-    font-weight: 600
-}
-
-.tariffsLine .styledUl {
-    margin-bottom: 40px
-}
-
-.tariffsLine .styledUl li {
-    color: #fff;
-    list-style: square inside;
-    position: relative;
-    left: -15px;
-    font-size: 20px
-}
-
-.tariffsLine td {
-    vertical-align: top
-}
-
-.contestBlock {
-    background: url(http://finam.kz/themes/classic/pic/finamGreyBg.png);
-    border-bottom: solid 2px #ee2000;
-    position: relative;
-}
-
-.contestBlock:before {
-    position: absolute;
-    background: url(http://finam.kz/themes/classic/pic/reviewListShadowTop.png) 50% 0 no-repeat;
-    height: 13px;
-    bottom: -13px;
-    width: 100%;
-    left: 0;
-    display: inline-block;
-    content: ' ';
-}
-
-.contestBlock .topTitle {
-    font-size: 40px;
-    color: #000;
-    margin: 15px 0 10px 0;
-    font-weight: 600
-}
-
-.contestBlock .contestBlockInc {
-    background: url(http://finam.kz/themes/classic/pic/contestPeaple.png) no-repeat 50% 100%;
-    padding: 15px 0 30px 0
-}
-
-.forexBonus.bonusLIst {
-    padding-bottom: 30px;
-    position: relative
-}
-
-.forexBonus.bonusLIst .bonusTitle {
-    margin: 70px 0 70px 0
-}
-
-.forexBonus.bonusLIst:before {
-    position: absolute;
-    background: url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat;
-    height: 13px;
-    bottom: -30px;
-    width: 100%;
-    left: 0;
-    display: inline-block;
-    content: ' ';
-}
-
-.metaTradeLine {
-    background: url(http://finam.kz/themes/classic/pic/forexBgLines.png) 50% 0 no-repeat fixed;
-    background-size: cover;
-    padding: 30px 0;
-    position: relative
-}
-
-.metaTradeLine:before {
-    position: absolute;
-    background: url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat;
-    height: 13px;
-    bottom: 0px;
-    width: 100%;
-    left: 0;
-    display: inline-block;
-    content: ' ';
-}
-
-.metaTradeLine .contentPart {
-    width: 840px;
-}
-
-.metaTradeLine .image {
-    float: left;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    position: relative
-}
-
-.metaTradeLine .image img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.metaTradeLine .image .discr {
-    margin-left: 200px;
-}
-
-.metaTradeLine .discr .title {
-    font-size: 30px;
-    color: #000000;
-    margin: 0 0 30px 0
-}
-
-.metaTradeLine .discr .text {
-    font-size: 20px;
-    line-height: 24px
-}
-
-.metaTradeLine .discr .redBtn {
-    margin-top: 30px
-}
-
-.depoSiteLine {
-    padding: 30px 0;
-    position: relative
-}
-
-.depoSiteLine .contentPart {
-    width: 940px;
-}
-
-.depoSiteLine .image {
-    float: left;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    position: relative
-}
-
-.depoSiteLine .image img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.depoSiteLine .discr {
-    margin-left: 400px;
-    text-align: center;
-    padding: 90px 0 0 0
-}
-
-.depoSiteLine .discr .title {
-    font-size: 50px;
-    color: #ee2000;
-    margin: 0 0 30px 0;
-    font-weight: 600
-}
-
-.depoSiteLine .discr .text {
-    font-size: 20px;
-    line-height: 24px
-}
-
-.depoSiteLine .discr .redBtn {
-    margin-top: 30px
-}
-
-.programmDownLoad {
-    width: 480px;
-    margin: 0 auto 30px auto
-}
-
-.programmDownLoad .image {
-    width: 230px;
-    height: 230px;
-    border: solid #ebebeb 1px;
-    float: left;
-    position: relative;
-    text-align: center
-}
-
-.programmDownLoad .image img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.programmDownLoad .discr {
-    margin-left: 250px;
-}
-
-.programmDownLoad .discr .title {
-    font-size: 18px;
-    color: #ee2000;
-    margin: 0 0 20px 0;
-    position: relative;
-    top: -4px
-}
-
-.programmDownLoad .discr .text {
-    margin: 20px 0;
-    font-size: 14px;
-}
-
-.noBgTabs.currencyMarketBlock {
-    background: url(http://finam.kz/themes/classic/pic/finamGreyBg.png)
-}
-
-.noBgTabs .smallTitle {
-    font-size: 18px;
-    font-variant: 600;
-    margin-bottom: 40px
-}
-
-.noBgTabs table td {
-    vertical-align: top
-}
-
-.noBgTabs a {
-    text-decoration: none;
-    line-height: 26px
-}
-
-.noBgTabs a:hover {
-    text-decoration: underline
-}
-
-.flagTable {
-    margin: 0 0 0 150px;
-}
-
-.flagTable .titleTable {
-    margin: 0 0 30px 0
-}
-
-.flagTable .flagItem img {
-    position: relative;
-    top: 2px;
-    margin: 0 4px 0 0
-}
-
-.flagTable .flagItem {
-    line-height: 25px;
-    margin: 4px 0
-}
-
-.forexTable {
-    border: solid #f1592b 1px;
-    position: relative;
-    padding: 0 0 50px 0
-}
-
-.forexTable .hideShowBtn {
-    background: #fff;
-    border: solid #f1592b 1px;
-    border-bottom: solid #fff 1px;
-    height: 30px;
-    width: 130px;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    margin-left: -65px;
-    bottom: -1px;
-}
-
-.forexTable .hideShowBtn:before {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    background: url(http://finam.kz/themes/classic/pic/forexArrow.png);
-    margin-left: -10px;
-    width: 20px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.forexTable .hideShowBtn.opened:before {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.forexTable table {
-    width: 100%
-}
-
-.forexTable table th {
-    background: #d9d9d9;
-    text-align: center;
-    font-weight: 400;
-    padding: 10px 20px
-}
-
-.forexTable table td {
-    text-align: center;
-    font-weight: 400;
-    padding: 4px 20px
-}
-
-.forexTable table tr:nth-child(odd) {
-    background: #f2f2f2
-}
-
-.forexTable table img {
-    position: relative;
-    top: 2px
-}
-
-.forexTableInc {
-    height: 309px;
-    overflow: hidden
-}
-
-.inside_tabs_line {
-    margin: 35px 0 15px 0
-}
-
-.inside_tabs_line_border {
-    background: #ebebeb;
-    border: solid #e6e6e6 1px;
-    height: 6px;
-    position: relative;
-    z-index: 1;
-    margin-top: -1px
-}
-
-.inside_tabs_line .item {
-    float: left;
-    border: solid transparent 1px;
-    border-bottom: none;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-topleft: 10px;
-    -moz-border-radius-topright: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    color: #4595ce;
-    font-family: 'MyriadPro-Bold';
-    width: 161px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 2;
-    cursor: pointer
-}
-
-.inside_tabs_line .item:hover {
-    color: #000
-}
-
-.inside_tabs_line .item .icon {
-    height: 60px;
-    text-align: center
-}
-
-.inside_tabs_line .item.active {
-    background: #ebebeb;
-    border: solid #e6e6e6 1px;
-    border-bottom: none;
-    color: #4595ce!important
-}
-
-.cfd_table {
-    width: 100%;
-    margin: 20px 0
-}
-
-.cfd_table td, .cfd_table th {
-    vertical-align: middle;
-    padding: 10px;
-    text-align: left;
-    font-weight: normal
-}
-
-.cfd_table th {
-    background: #f0f0f0
-}
-
-.cfd_table td img {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
-    zoom:1; margin-right: 8px
-}
-
-.wide_block {
-    width: 900px
-}
-
-.inside_tabs_conteinier_item {
-    display: none
-}
-
-.inside_tabs_conteinier_item.active {
-    display: block
-}
-
-.aboutPageTitle.currencyTabsLine {
-    width: 500px;
-    margin: auto
-}
-
-.unitedAccountTitle.currencyTabsLine {
-    width: 700px;
-    margin: auto
-}
-
-.selectedBlock {
-    background: #ee2000;
-    font-size: 16px;
-    color: #fff;
-    padding: 15px;
-    margin: 40px 0 30px 0
-}
-
-.albumBlock {
-    text-align: left;
-    width: 930px;
-    position: relative;
-    left: 20px
-}
-
-.albumBlock .item {
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-    width: 251px;
-    margin: 30px 20px;
-    opacity: 0.6
-}
-
-.albumBlock .item .image {
-    background: url(http://finam.kz/themes/classic/pic/albumBg.png);
-    height: 148px;
-    padding: 12px 10px 30px 10px;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    display: block
-}
-
-.albumBlock .item .image img {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.albumBlock .item .title {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0 8px
-}
-
-.albumBlock .item:hover {
-    opacity: 1
-}
+	border: 1px solid transparent;
+	background: transparent 50% 50% repeat-x;
+	font-weight: bold;
+	color: #fff;
+}
+.courseFormBlock.courseAdv .itemInc .title{ margin-bottom:25px}
+.courseFormBlock .finamInputText.required{ height:30px; width:168px; border:solid #ee2000 1px; font-size:14px; color:#000000; font-style:italic}
+
+.courseFormBlock .finamTextArea{height:90px; width:168px; font-size:14px;  color:#000000; font-style:italic; font-family: 'Roboto', sans-serif;}
+
+.requiredText{ font-size:10px; margin:2px 0 10px 0}
+.requiredText:before{ content:' '; display:inline-block; width:8px; height:4px; border:solid #ee2000 1px; font-size:10px; margin-right:3px}
+
+.reviewsLine{ background:#ee2000 url(http://finam.kz/themes/classic/pic/reviewBg.png); position:relative; padding:30px 0 45px 0}
+.reviewsLine:before{content:' '; display:inline-block; position:absolute; width:100%; left:0; top:0; background:url(http://finam.kz/themes/classic/pic/reviewListShadowTop.png) 50% 0 no-repeat; height:13px}
+.reviewsLine:after{content:' '; display:inline-block;position:absolute; width:100%; left:0; bottom:0; background:url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat; height:13px}
+
+.reviewsLine .topTitle{ color:#fff; font-size:30px; font-family: 'Roboto', sans-serif; margin:0 0 30px 0}
+
+.reviewsBlock{ position:relative; width:790px; margin:auto; height:410px;}
+.reviewsBlock .topBtn{ background:url(http://finam.kz/themes/classic/pic/btnsrevewsSlider.png); width:40px; height:40px; cursor:pointer; position:absolute; right:-60px; top:10px; border:none; padding:none   }
+.reviewsBlock .btmBtn{ background:url(http://finam.kz/themes/classic/pic/btnsrevewsSlider.png) 0 100% no-repeat; width:40px; height:40px; cursor:pointer; position:absolute; right:-60px; top:380px; overflow:hidden ; border:none; padding:none  }
+.reviewsBlock .topBtn:hover, .reviewsBlock .btmBtn:hover{ opacity:0.6}
+.reviewsBlock .item{ background:#fff; padding:10px; height:180px; margin:10px 0  }
+.reviewsBlock .item .image{ height:180px; overflow:hidden; width:160px; float:left  }
+.reviewsBlock .item .image img{ max-height:180px; max-width:160px}
+.reviewsBlock .item .discr{ margin-left:200px}
+.reviewsBlock .item .discr .title{ color:#ee2000; font-size:30px; margin: 0 0  15px 0; font-family: 'Roboto', sans-serif; }
+.reviewsBlockInc{ position:relative; overflow:hidden; height:420px}
+.reviewsBlockIncInc{ position:relative}
+
+.coursesTable { width:100%}
+.coursesTable th{  text-align:left; font-weight:400; padding:10px 0 0 0}
+.coursesTable th div{background:#d7d7d7; padding:15px 10px; margin-right:10px; height:20px; white-space:nowrap }
+
+.coursesTable td{ border-bottom:solid #cccccc 2px; padding:10px 10px 20px 10px }
+.coursesTable tr:hover{ background:#f2f2f2}
+.freeBtn{ position:relative; top:7px; }
+
+.secondLineBg.forexAdv{ padding-bottom:0; }
+.secondLineBg.forexAdv .sectionAdv { padding:0 0 30px 0; margin-bottom:0}
+.secondLineBg.forexAdv .sectionAdv .item .title { font-size:30px}
+.forexAdv{ background:#fff; height:auto; padding-bottom:30px}
+
+.secondLineBg.forexAdv .sectionAdv .item .text{ height:140px;}
+.secondLineBg.forexAdv .sectionAdv .item { height:600px}
+.secondLineBg.forexAdv .sectionAdv .item img{position:relative; left:-25px}
+.secondLineBg.forexAdv .sectionAdv .item img{ position:relative}
+.secondLineBg.forexAdv .sectionAdv .item.last img{ top:20px}
+
+.secondLineBg.forexAdv .callBackCover{-webkit-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.2); box-shadow: 0 2px 10px 2px rgba(0,0,0,0.2); padding:10px; margin:0 0 50px 0}
+
+.secondLineBg.forexAdv .topTtile{ font-size:30px; color:#ee2000; margin:0 0 30px 50px}
+.secondLineBg.forexAdv .shadowBottom{ bottom:-50px}
+
+.tariffsLine{ background:url(http://finam.kz/themes/classic/pic/redFinam.png); padding:20px 0}
+.tariffsLine .topTitle{ font-size:40px; color:#ffffff; margin:15px 0 10px 0; font-weight:600}
+
+.tariffsLine .styledUl{ margin-bottom:40px}
+.tariffsLine .styledUl li{ color:#fff; list-style:square inside; position:relative; left:-15px; font-size:20px}
+.tariffsLine td{ vertical-align:top}
+
+.contestBlock{ background:url(http://finam.kz/themes/classic/pic/finamGreyBg.png); border-bottom:solid 2px #ee2000; position:relative; }
+.contestBlock:before{ position:absolute; background:url(http://finam.kz/themes/classic/pic/reviewListShadowTop.png) 50% 0 no-repeat; height:13px; bottom:-13px; width:100%; left:0; display:inline-block; content:' ';}
+.contestBlock .topTitle{ font-size:40px; color:#000; margin:15px 0 10px 0; font-weight:600}
+.contestBlock .contestBlockInc{ background:url(http://finam.kz/themes/classic/pic/contestPeaple.png) no-repeat 50% 100%; padding:15px 0 30px 0}
+
+.forexBonus.bonusLIst{ padding-bottom:30px; position:relative}
+.forexBonus.bonusLIst .bonusTitle{ margin:70px 0 70px 0 }
+.forexBonus.bonusLIst:before{ position:absolute; background:url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat; height:13px; bottom:-30px; width:100%; left:0; display:inline-block; content:' ';}
+
+.metaTradeLine{ background:url(http://finam.kz/themes/classic/pic/forexBgLines.png) 50% 0 no-repeat fixed; background-size:cover; padding:30px 0; position:relative}
+.metaTradeLine:before{ position:absolute; background:url(http://finam.kz/themes/classic/pic/reviewListShadowBottom.png) 50% 0 no-repeat; height:13px; bottom:0px; width:100%; left:0; display:inline-block; content:' ';}
+.metaTradeLine .contentPart{ width:840px;}
+
+.metaTradeLine .image{ float:left; height:200px; width:200px; text-align:center; position:relative }
+.metaTradeLine .image img{position: absolute;  top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.metaTradeLine .image .discr{ margin-left:200px;}
+.metaTradeLine  .discr .title{ font-size:30px; color:#000000; margin:0 0 30px 0 }
+.metaTradeLine  .discr .text{ font-size:20px; line-height:24px}
+.metaTradeLine  .discr .redBtn{ margin-top:30px}
+
+.depoSiteLine{padding:30px 0; position:relative}
+.depoSiteLine .contentPart{ width:940px;}
+.depoSiteLine .image{ float:left; height:400px; width:400px; text-align:center; position:relative }
+.depoSiteLine .image img{position: absolute;  top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.depoSiteLine  .discr{ margin-left:400px; text-align:center; padding:90px 0 0 0}
+.depoSiteLine  .discr .title{ font-size:50px; color:#ee2000; margin:0 0 30px 0; font-weight:600 }
+.depoSiteLine  .discr .text{ font-size:20px; line-height:24px}
+.depoSiteLine  .discr .redBtn{ margin-top:30px}
+
+.programmDownLoad{ width:480px; margin:0 auto 30px auto }
+.programmDownLoad .image{ width:230px; height:230px; border:solid #ebebeb 1px; float:left; position:relative; text-align:center}
+.programmDownLoad .image img{position: absolute;  top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.programmDownLoad .discr{ margin-left:250px;}
+.programmDownLoad .discr .title{ font-size:18px; color:#ee2000; margin:0 0 20px 0; position:relative; top:-4px}
+.programmDownLoad .discr .text{ margin:20px 0; font-size:14px;}
+
+.noBgTabs.currencyMarketBlock{ background:url(http://finam.kz/themes/classic/pic/finamGreyBg.png)}
+.noBgTabs .smallTitle{ font-size:18px; font-variant:600; margin-bottom:40px}
+.noBgTabs table td{ vertical-align:top}
+.noBgTabs a{ text-decoration:none; line-height:26px}
+.noBgTabs a:hover{ text-decoration:underline}
+
+.flagTable{ margin: 0 0 0 150px;}
+.flagTable .titleTable{ margin:0  0 30px 0}
+.flagTable .flagItem img{ position:relative; top:2px; margin:0 4px 0 0}
+.flagTable .flagItem{ line-height:25px; margin:4px 0}
+
+.forexTable{ border:solid #f1592b 1px; position:relative; padding: 0 0 50px 0}
+.forexTable .hideShowBtn{ background:#fff; border:solid #f1592b 1px; border-bottom:solid #fff 1px; height:30px; width:130px; cursor:pointer; position:absolute; left:50%; margin-left:-65px; bottom:-1px; }
+.forexTable .hideShowBtn:before{ position:absolute; left:50%; bottom:0; background:url(http://finam.kz/themes/classic/pic/forexArrow.png); margin-left:-10px; width:20px; height:15px; content:''; display:inline-block; -webkit-transition: all 300ms ease;-moz-transition: all 300ms ease;-ms-transition: all 300ms ease;-o-transition: all 300ms ease;transition: all 300ms ease;}
+.forexTable .hideShowBtn.opened:before{-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);
+transform: rotate(180deg);}
+
+.forexTable table{ width:100% }
+.forexTable table th{ background:#d9d9d9; text-align:center; font-weight:400; padding:10px 20px}
+.forexTable table td{  text-align:center; font-weight:400; padding:4px 20px}
+.forexTable table tr:nth-child(odd){ background:#f2f2f2}
+.forexTable table img{ position:relative; top:2px}
+
+.forexTableInc{ height:309px; overflow:hidden}
+
+.inside_tabs_line{ margin:35px 0 15px 0}
+.inside_tabs_line_border{ background:#ebebeb; border:solid #e6e6e6 1px; height:6px; position:relative; z-index:1; margin-top:-1px}
+.inside_tabs_line .item{ float:left; border:solid transparent 1px; border-bottom:none; -webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;
+border-top-right-radius: 10px; text-align:center; color:#4595ce; font-family: 'MyriadPro-Bold'; width:161px;  padding-top:5px; padding-bottom:10px; position:relative; z-index:2; cursor:pointer}
+.inside_tabs_line .item:hover{ color:#000}
+.inside_tabs_line .item .icon{ height:60px; text-align:center }
+.inside_tabs_line .item.active{background:#ebebeb; border:solid #e6e6e6 1px; border-bottom:none;color:#4595ce!important}
+
+.cfd_table{ width:100%; margin:20px 0 }
+.cfd_table td, .cfd_table th{ vertical-align:middle; padding:10px; text-align:left; font-weight:normal}
+.cfd_table th{ background:#f0f0f0}
+.cfd_table td img{display:inline-block; *display:inline; vertical-align:middle; zoom:1; margin-right:8px}
+
+.wide_block{width:900px}
+
+.inside_tabs_conteinier_item{ display:none}
+.inside_tabs_conteinier_item.active{ display:block}
+
+.aboutPageTitle.currencyTabsLine{ width:500px; margin:auto}
+.unitedAccountTitle.currencyTabsLine{ width:700px; margin:auto}
+
+.selectedBlock{ background:#ee2000; font-size:16px; color:#fff; padding:15px; margin:40px 0 30px 0}
+
+.albumBlock{ text-align:left; width:930px; position:relative; left:20px}
+.albumBlock .item{ text-align:left; display:inline-block; vertical-align:top;  width:251px; margin:30px 20px; opacity:0.6 }
+.albumBlock .item .image{background:url(http://finam.kz/themes/classic/pic/albumBg.png); height:148px; padding:12px 10px 30px 10px; overflow:hidden; text-align:center; position:relative; display:block}
+.albumBlock .item .image img{top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+.albumBlock .item .title{ display:block; margin:10px 0; text-decoration:none; color:#000; font-size:20px; font-family: 'Roboto', sans-serif; padding:0 8px }
+.albumBlock .item:hover{ opacity:1}
 
 /*.albumBlock.albumsInc .item{ width:275px;  margin:30px 10px; opacity:1; text-align:center; height:auto; vertical-align:middle}*/
-.albumBlock.albumsInc .item {
-    width: 275px;
-    margin: 30px 10px;
-    opacity: 1;
-    text-align: center;
-    height: auto;
-}
+.albumBlock.albumsInc .item{ width:275px;  margin:30px 10px; opacity:1; text-align:center; height:auto;}
+.albumBlock.albumsInc .item .image{background:none;  text-align:center; overflow:visible;  padding:0; display:inline-block; height:auto }
+.albumBlock.albumsInc .item .image:after{ position:absolute; display:inline-block; content:''; bottom:-13px; background:url(http://finam.kz/themes/classic/pic/gallaryImgShadow.png) 50% 0; width:100%; height:13px; left:0 }
+.albumBlock .item .image img{  top: 0; bottom: 0; left: 0; right: 0; margin: auto; max-height:190px; max-width:275px; display:block}
 
-.albumBlock.albumsInc .item .image {
-    background: none;
-    text-align: center;
-    overflow: visible;
-    padding: 0;
-    display: inline-block;
-    height: auto
-}
+.dictionary_page{ padding:20px}
+.dictionary_page .nav_line{ margin:10px 0 30px 0; text-transform:uppercase;   }
+.dictionary_page .nav_line .item{color:#333333; font-size:13px;  display:inline-block; *display:inline; vertical-align:top; zoom:1; line-height:16px; padding:0 3px; }
+.dictionary_page .nav_line .item.active{ color:#ee2000; }
+.dictionary_page .nav_line .item:hover{ text-decoration:underline; color:#ee2000;}
 
-.albumBlock.albumsInc .item .image:after {
-    position: absolute;
-    display: inline-block;
-    content: '';
-    bottom: -13px;
-    background: url(http://finam.kz/themes/classic/pic/gallaryImgShadow.png) 50% 0;
-    width: 100%;
-    height: 13px;
-    left: 0
-}
+.dictionary_page .words_list .item{ display:inline-block; text-transform:uppercase; display:inline-block; *display:inline; vertical-align:top; zoom:1; width:400px; margin:2px 0; position:relative }
+.dictionary_page .words_list .item:hover{ text-decoration:underline; color:#ed1f00; cursor:pointer }
+.light{ color:red}
 
-.albumBlock .item .image img {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-height: 190px;
-    max-width: 275px;
-    display: block
-}
+.dictionary_page .item_discription{ position:fixed; background:#f8f8f8; width:900px; padding:20px; font-size:14px; color:#333333; z-index:22; text-transform:none; border:solid #f2f2f2 1px; -moz-box-shadow:  2px 2px 3px #b3b2b2; -webkit-box-shadow:  2px 2px 3px #b3b2b2;  box-shadow: 2px 2px 3px #b3b2b2;   behavior: url(css/pie.htc); left:50%; margin-left:-450px }
+.dictionary_page .item_discription .close_btn{ background:url(http://finam.kz/themes/classic/pic/close_btn.png); width:34px; height:36px; position:absolute; right:-15px; top:-15px;}
+.dictionary_page .item_discription .close_btn:hover{ opacity:0.6}
 
-.dictionary_page {
-    padding: 20px
-}
+.wordDiscr{ background:#4d4d4d; font-size:16px; color:#fff; padding:15px; margin:10px 20px 10px 20px}
 
-.dictionary_page .nav_line {
-    margin: 10px 0 30px 0;
-    text-transform: uppercase;
-}
+.brokertable{ border:solid #ee2000 1px; margin-bottom:20px }
+.brokertable  tr:nth-child(odd){ background:#f2f2f2}
+.brokertable  tr th:nth-child(odd){ background:#ebebeb}
+.brokertable  th, .brokertable td{ padding:20px 20px; text-align:center; font-weight:400}
+.brokertable tr td:nth-child(1){ width:35%; text-align:left}
 
-.dictionary_page .nav_line .item {
-    color: #333333;
-    font-size: 13px;
-    display: inline-block;
-    *display: inline;
-    vertical-align: top;
-    zoom:1; line-height: 16px;
-    padding: 0 3px;
-}
+.brokertable.XSSize{ width:420px; margin:40px auto}
+.brokertable.XSSize td, .brokertable.MSize td{ padding:5px 10px}
+.brokertable tr.XSSize td:nth-child(1), .brokertable tr.MSize td:nth-child(1){ width:45%; text-align:left}
 
-.dictionary_page .nav_line .item.active {
-    color: #ee2000;
-}
-
-.dictionary_page .nav_line .item:hover {
-    text-decoration: underline;
-    color: #ee2000;
-}
-
-.dictionary_page .words_list .item {
-    display: inline-block;
-    text-transform: uppercase;
-    display: inline-block;
-    *display: inline;
-    vertical-align: top;
-    zoom:1; width: 400px;
-    margin: 2px 0;
-    position: relative
-}
-
-.dictionary_page .words_list .item:hover {
-    text-decoration: underline;
-    color: #ed1f00;
-    cursor: pointer
-}
-
-.light {
-    color: red
-}
-
-.dictionary_page .item_discription {
-    position: fixed;
-    background: #f8f8f8;
-    width: 900px;
-    padding: 20px;
-    font-size: 14px;
-    color: #333333;
-    z-index: 22;
-    text-transform: none;
-    border: solid #f2f2f2 1px;
-    -moz-box-shadow: 2px 2px 3px #b3b2b2;
-    -webkit-box-shadow: 2px 2px 3px #b3b2b2;
-    box-shadow: 2px 2px 3px #b3b2b2;
-    behavior: url(css/pie.htc);
-    left: 50%;
-    margin-left: -450px
-}
-
-.dictionary_page .item_discription .close_btn {
-    background: url(http://finam.kz/themes/classic/pic/close_btn.png);
-    width: 34px;
-    height: 36px;
-    position: absolute;
-    right: -15px;
-    top: -15px;
-}
-
-.dictionary_page .item_discription .close_btn:hover {
-    opacity: 0.6
-}
-
-.wordDiscr {
-    background: #4d4d4d;
-    font-size: 16px;
-    color: #fff;
-    padding: 15px;
-    margin: 10px 20px 10px 20px
-}
-
-.brokertable {
-    border: solid #ee2000 1px;
-    margin-bottom: 20px
-}
-
-.brokertable tr:nth-child(odd) {
-    background: #f2f2f2
-}
-
-.brokertable tr th:nth-child(odd) {
-    background: #ebebeb
-}
-
-.brokertable th, .brokertable td {
-    padding: 20px 20px;
-    text-align: center;
-    font-weight: 400
-}
-
-.brokertable tr td:nth-child(1) {
-    width: 35%;
-    text-align: left
-}
-
-.brokertable.XSSize {
-    width: 420px;
-    margin: 40px auto
-}
-
-.brokertable.XSSize td, .brokertable.MSize td {
-    padding: 5px 10px
-}
-
-.brokertable tr.XSSize td:nth-child(1), .brokertable tr.MSize td:nth-child(1) {
-    width: 45%;
-    text-align: left
-}
-
-.brokertable.MSize {
-    width: 730px;
-    margin: 40px auto
-}
+.brokertable.MSize{ width:730px; margin:40px auto}
 
 /*added*/
-.longTitle {
-    line-height: 67px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #000000;
-    background: rgba(255,255,255,0.5);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: -5px
-}
+.longTitle{ line-height:67px; font-size:24px; font-weight:600; color:#000000; background:rgba(255,255,255,0.5); font-family: 'Roboto', sans-serif; text-align:center; margin-top:-5px }
+.twoBlockLine .contentPart{ float:left; margin:0 5px; padding-bottom:50px}
+.twoBlockLine{ width:980px; margin:auto; text-align:center}
+.twoBlockLine .textBlock{ width:240px; margin:auto}
+.twoBlockLine .textBlock ul{ margin:30px 0 30px 50px; text-align:left}
+.twoBlockLine .contentPart .topBorderedTitle{ margin-bottom:10px}
+.twoBlockLine .textBlock .lineSeporate{ margin:15px 30px 35px 30px; border-top:solid #e69282 2px}
+.twoBlockLine .textBlock .text{ position:relative; display:block; line-height:20px; height:80px; overflow:hidden; text-align:left; left:15px}
 
-.twoBlockLine .contentPart {
-    float: left;
-    margin: 0 5px;
-    padding-bottom: 50px
-}
+.redLine{ background:#ee2000; padding:4px 0; height:40px; line-height:40px; color:#fff; position:relative; z-index:16}
+.redLine .contentPart{ width:900px; }
 
-.twoBlockLine {
-    width: 980px;
-    margin: auto;
-    text-align: center
-}
+main .contentPart .rightSide{z-index:18; position:relative}
 
-.twoBlockLine .textBlock {
-    width: 240px;
-    margin: auto
-}
+.regionNameItem{ background:#ffcb3f; padding:2px 4px; position:absolute; font-size:11px; z-index:40;}
+.regionsNamesEurope .regionNameItem{ opacity:0}
+.regionsNamesEurope .regionNameItem span{ display:inline-block; line-height:10px; min-width:10px; cursor:pointer}
+.likeRegionNameItem{ background:#ffcb3f; padding:2px 4px;  font-size:11px; z-index:40; width:50px; margin:0 auto; position:relative; top:18px}
 
-.twoBlockLine .textBlock ul {
-    margin: 30px 0 30px 50px;
-    text-align: left
-}
+.finamPluses table{ border:solid transparent 5px}
+.finamPluses table td{ background:rgba(255,255,255,0.85); padding:20px; border-right:solid transparent 5px }
 
-.twoBlockLine .contentPart .topBorderedTitle {
-    margin-bottom: 10px
-}
+.marketName{ font-size:11px; position:absolute; top:25px; left:10px; background:#000; color:#fff; padding:3px; white-space:nowrap; display:none; }
+.regionsNamesEurope{position:absolute; left:0; top:0;z-index:500}
+#yw0_button{position:relative; top:-21px}
+#RequestForm_verifyCode{padding: 0 10px;
+height: 34px; width:140px}
 
-.twoBlockLine .textBlock .lineSeporate {
-    margin: 15px 30px 35px 30px;
-    border-top: solid #e69282 2px
-}
-
-.twoBlockLine .textBlock .text {
-    position: relative;
-    display: block;
-    line-height: 20px;
-    height: 80px;
-    overflow: hidden;
-    text-align: left;
-    left: 15px
-}
-
-.redLine {
-    background: #ee2000;
-    padding: 4px 0;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    position: relative;
-    z-index: 16
-}
-
-.redLine .contentPart {
-    width: 900px;
-}
-
-main .contentPart .rightSide {
-    z-index: 18;
-    position: relative
-}
-
-.regionNameItem {
-    background: #ffcb3f;
-    padding: 2px 4px;
-    position: absolute;
-    font-size: 11px;
-    z-index: 40;
-}
-
-.regionsNamesEurope .regionNameItem {
-    opacity: 0
-}
-
-.regionsNamesEurope .regionNameItem span {
-    display: inline-block;
-    line-height: 10px;
-    min-width: 10px;
-    cursor: pointer
-}
-
-.likeRegionNameItem {
-    background: #ffcb3f;
-    padding: 2px 4px;
-    font-size: 11px;
-    z-index: 40;
-    width: 50px;
-    margin: 0 auto;
-    position: relative;
-    top: 18px
-}
-
-.finamPluses table {
-    border: solid transparent 5px
-}
-
-.finamPluses table td {
-    background: rgba(255,255,255,0.85);
-    padding: 20px;
-    border-right: solid transparent 5px
-}
-
-.marketName {
-    font-size: 11px;
-    position: absolute;
-    top: 25px;
-    left: 10px;
-    background: #000;
-    color: #fff;
-    padding: 3px;
-    white-space: nowrap;
-    display: none;
-}
-
-.regionsNamesEurope {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 500
-}
-
-#yw0_button {
-    position: relative;
-    top: -21px
-}
-
-#RequestForm_verifyCode {
-    padding: 0 10px;
-    height: 34px;
-    width: 140px
-}
-
-td.ui-datepicker-week-end .ui-state-default {
-    background: #e5e6e8;
-    border: 1px solid transparent!important
-}
+td.ui-datepicker-week-end .ui-state-default{ background:#e5e6e8; border:1px solid transparent!important}
 
 .newsHorizontalList {
     position: absolute;
@@ -2709,7 +592,6 @@ td.ui-datepicker-week-end .ui-state-default {
     padding-top: 10px;
     overflow: hidden;
 }
-
 .newsHorizontalList .contentPart {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2725,19 +607,15 @@ td.ui-datepicker-week-end .ui-state-default {
     cursor: pointer;
 }
 
-.newsHorizontalList h2 {
+.newsHorizontalList h2{
     margin: 0;
     margin-left: -15px;
     color: #000;
     line-height: 20px;
 }
-
 .newsHorizontalList .newsContainer {
     font-size: 0;
-    height: 450px;
-    overflow: auto;
-}
-
+ height: 450px; overflow: auto;}
 .news-belt-sidebar-item {
     display: block;
     width: 180px;
@@ -2751,11 +629,9 @@ td.ui-datepicker-week-end .ui-state-default {
     overflow: hidden;
     font-size: 14px;
 }
-
 .news-belt-sidebar-item__header {
     font-size: 13px;
 }
-
 .date {
     background: #ebebeb;
     padding: 0.1em 0.4em;
@@ -2771,25 +647,18 @@ td.ui-datepicker-week-end .ui-state-default {
     font-size: 0.85em;
     line-height: 1.3em;
 }
-
 .lightgrey {
-    padding-top: 5px;
-    padding-bottom: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
     color: #b2b2b2 !important;
 }
-
 .news-belt-sidebar-item a.noline {
     text-decoration: none;
 }
-
 .news-belt-sidebar-item a.noline:hover {
     text-decoration: underline;
 }
-
-.news-items-new-parent {
-    height: 450px;
-}
-
+.news-items-new-parent{height: 450px;}
 .news-belt-sidebar-item a:visited {
     color: #906;
 }
@@ -2797,37 +666,30 @@ td.ui-datepicker-week-end .ui-state-default {
 .news-belt-sidebar-item a:hover {
     color: #ed1c24 !important;
 }
-
 .f-fake-url, .f-fake-url:hover {
     text-decoration: none;
 }
-
 .f-fake-url__t {
     color: #000;
 }
-
 .f-fake-url {
-    font-size: 12px;
+	font-size: 12px;
 }
-
 .f-fake-url__u {
     text-decoration: underline;
     color: #00529f;
 }
-
 .f-fake-url:hover .f-fake-url__u {
     color: #ee2000;
 }
-
 .news-belt-sidebar-item IMG {
     float: right;
 }
-
 .owl-buttons {
     font-size: 14px;
 }
-
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     display: none;
     position: absolute;
     top: 35px;
@@ -2839,20 +701,18 @@ td.ui-datepicker-week-end .ui-state-default {
     border-top: none;
     border-right: none;
 }
-
-.owl-prev:hover, .owl-next:hover {
+.owl-prev:hover,
+.owl-next:hover {
     border-color: #b1b1b1;
 }
-
-.owl-prev:active, .owl-next:active {
+.owl-prev:active,
+.owl-next:active {
     border-color: #777777;
 }
-
 .owl-prev {
     left: -36px;
     transform: rotate(45deg);
 }
-
 .owl-next {
     right: -30px;
     transform: rotate(-135deg);
@@ -2876,7 +736,6 @@ td.ui-datepicker-week-end .ui-state-default {
     cursor: pointer;
     border: none;
 }
-
 .exchange-content h1 {
     font-size: 28px;
     font-weight: 300;
@@ -2902,14 +761,12 @@ td.ui-datepicker-week-end .ui-state-default {
     margin-top: 50px;
     padding-bottom: 100px;
 }
-
 .form-block .image {
     float: left;
     width: 440px;
     padding-left: 30px;
     padding-top: 50px;
 }
-
 .form-block .form {
     float: right;
     width: 470px;
@@ -2922,501 +779,1724 @@ td.ui-datepicker-week-end .ui-state-default {
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*---FONTS---*/
 @font-face {
-    font-family: 'Conv_Micracb';
-    src: url('../fonts/Micracb.eot');
-    src: local('â˜º'), url('../fonts/Micracb.woff') format('woff'), url('../fonts/Micracb.ttf') format('truetype'), url('../fonts/Micracb.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Conv_Micracb';
+	src: url('../fonts/Micracb.eot');
+	src: local('☺'), url('../fonts/Micracb.woff') format('woff'), url('../fonts/Micracb.ttf') format('truetype'), url('../fonts/Micracb.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 @font-face {
-    font-family: 'Conv_swiss';
-    src: url('../fonts/swiss-721-bold.eot');
-    src: local('â˜º'), url('../fonts/swiss-721-bold.woff') format('woff'), url('../fonts/swiss-721-bold.ttf') format('truetype'), url('../fonts/swiss-721-bold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Conv_swiss';
+	src: url('../fonts/swiss-721-bold.eot');
+	src: local('☺'), url('../fonts/swiss-721-bold.woff') format('woff'), url('../fonts/swiss-721-bold.ttf') format('truetype'), url('../fonts/swiss-721-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 /*Page - Single Trading Account*/
-.page__content {
-    width: 970px;
-    margin: 0 auto;
+.page__content{
+	width: 970px;
+	margin: 0 auto;
 }
-
-.STA {
-    padding: 40px 0 60px;
+.STA{
+	padding: 40px 0 60px;
 }
-
-.STA * {
-    box-sizing: border-box;
+.STA *{
+	box-sizing: border-box;
 }
-
-.tabs {
-    margin-bottom: 40px;
+.tabs{
+	margin-bottom: 40px;
 }
-
-.tabs__items {
-    list-style: none;
-    font-size: 0;
-    text-align: center;
+.tabs__items{
+	list-style: none;
+	font-size: 0;
+	text-align: center;
 }
-
-.tabs__items li {
-    display: inline-block;
-    margin-right: 20px;
+.tabs__items li{
+	display: inline-block;
+	margin-right: 20px;
 }
-
-.tabs__items li:last-child {
-    margin-right: 0;
+.tabs__items li:last-child{
+	margin-right: 0;
 }
-
-.tabs__items li a {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 25px;
-    color: #000;
-    font-size: 14px;
-    border: 1px solid #ee2000;
-    background: #fff;
-    text-decoration: none;
-    transition: background .15s;
+.tabs__items li a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 25px;
+	color: #000;
+	font-size: 14px;
+	border: 1px solid #ee2000;
+	background: #fff;
+	text-decoration: none;
+	transition: background .15s;
 }
-
-.tabs__items li a:hover {
-    background: #ee2000;
-    color: #fff;
+.tabs__items li a:hover{
+	background: #ee2000;
+	color: #fff;
 }
-
-.tabs__items li a.active {
-    background: #ee2000;
-    color: #fff;
+.tabs__items li a.active{
+	background: #ee2000;
+	color: #fff;
 }
-
-.STA__banner {
-    height: 300px;
-    background: url(../img/baner-1.jpg) no-repeat;
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 20px 30px 0;
+.STA__banner{
+	height: 300px;
+	background: url(../img/baner-1.jpg) no-repeat;
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 20px 30px 0;
 }
-
-.banner__h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    margin: 0;
+.banner__h1{
+	font-size: 36px;
+	text-transform: uppercase;
+	margin: 0;
 }
-
-.banner__small {
-    font-size: 20px;
-    text-transform: uppercase;
+.banner__small{
+	font-size: 20px;
+	text-transform: uppercase;
 }
-
-.banner__price-trade {
-    display: inline-block;
-    background: #f1981b;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 12px;
-    font-size: 16px;
-    text-transform: uppercase;
+.banner__price-trade{
+	display: inline-block;
+	background: #f1981b;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 12px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
-
-.banner__exchanges {
-    font-size: 14px;
+.banner__exchanges{
+	font-size: 14px;
 }
-
-.banner__description {
-    font-size: 16px;
+.banner__description{
+	font-size: 16px;
 }
-
-.btn {
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 25px;
-    font-size: 14px;
-    text-decoration: none;
-    text-align: center;
+.btn{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 25px;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
 }
-
-.STA__banner .btn_red {
-    margin-right: 17px;
-    vertical-align: bottom;
+.STA__banner .btn_red{
+	margin-right: 17px;
+	vertical-align: bottom;
 }
-
-.btn_red {
-    background: #ee2000;
-    color: #fff;
+.btn_red{
+	background: #ee2000;
+	color: #fff;
 }
-
-.btn_red:hover {
-    background: #af1800;
+.btn_red:hover{
+	background: #af1800;
 }
-
-.btn_transparent {
-    background: transparent;
-    line-height: 36px;
-    color: #ee2000;
-    border: 2px solid #ee2000;
+.btn_transparent{
+	background: transparent;
+	line-height: 36px;
+	color: #ee2000;
+	border: 2px solid #ee2000;
 }
-
-.btn_transparent:hover {
-    background: rgba(238,32,0,.5);
-    color: #fff;
+.btn_transparent:hover{
+	background: rgba(238,32,0,.5);
+	color: #fff;
 }
-
 /*---section---STA__advantages*/
-.STA__advantages {
-    position: relative;
-    float: left;
-    width: 727px;
+.STA__advantages{
+	position: relative;
+	float: left;
+	width: 727px;
 }
-
-.STA__advantages:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -14px;
-    right: 0;
-    height: 307px;
-    border-left: 1px solid #ccc;
+.STA__advantages:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: -14px;
+	right: 0;
+	height: 307px;
+	border-left: 1px solid #ccc;
 }
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
 }
-
-.wr-STA__advantages__content {
-    display: inline-block;
-    width: 240px;
-    text-align: center;
-    padding: 0 10px;
-    margin-bottom: 40px;
-    vertical-align: top;
+.wr-STA__advantages__content{
+	display: inline-block;
+	width: 240px;
+	text-align: center;
+	padding: 0 10px;
+	margin-bottom: 40px;
+	vertical-align: top;
 }
-
-.STA__advantages__name {
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 10px 0 5px;
+.STA__advantages__name{
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 10px 0 5px;
 }
-
-.STA__advantages__addition {
-    font-size: 14px;
-    margin: 0;
+.STA__advantages__addition{
+	font-size: 14px;
+	margin:0;
 }
-
-.STA__icn {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
+.STA__icn{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
 }
-
-.STA__advantages__icn-1 {
-    background: url(../img/globe.png) no-repeat;
+.STA__advantages__icn-1{
+	background: url(../img/globe.png) no-repeat;
 }
-
-.STA__advantages__icn-2 {
-    background: url(../img/moneybag.png) no-repeat;
+.STA__advantages__icn-2{
+	background: url(../img/moneybag.png) no-repeat;
 }
-
-.STA__advantages__icn-3 {
-    background: url(../img/percent.png) no-repeat;
+.STA__advantages__icn-3{
+	background: url(../img/percent.png) no-repeat;
 }
-
-.STA__advantages__icn-4 {
-    background: url(../img/cogwheel-1.png) no-repeat;
+.STA__advantages__icn-4{
+	background: url(../img/cogwheel-1.png) no-repeat;
 }
-
-.STA__advantages__icn-5 {
-    background: url(../img/circulation.png) no-repeat;
+.STA__advantages__icn-5{
+	background: url(../img/circulation.png) no-repeat;
 }
-
-.STA__advantages__icn-6 {
-    background: url(../img/exchange.png) no-repeat;
+.STA__advantages__icn-6{
+	background: url(../img/exchange.png) no-repeat;
 }
-
 /*---section---STA__exchanges*/
-.STA__exchanges {
-    float: right;
-    width: 243px;
-    padding-left: 30px;
+.STA__exchanges{
+	float: right;
+	width: 243px;
+	padding-left: 30px;
 }
-
-.STA__exchanges__h2 {
-    color: #ee2000;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: bold;
+.STA__exchanges__h2{
+	color: #ee2000;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
-
-.STA__exchanges__item {
-    list-style: none;
-    font-size: 14px;
+.STA__exchanges__item{
+	list-style: none;
+	font-size: 14px;
 }
-
-.STA__exchanges__item li {
-    margin-bottom: 6px;
+.STA__exchanges__item li{
+	margin-bottom: 6px;
 }
-
 /*---section---rading-platforms*/
-.rading-platforms__h2 {
-    font-size: 30px;
-    color: #000;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 40px;
+.rading-platforms__h2{
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.download-platform{
+	float: left;
+	width: 25%;
+	height: 460px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #fd452c;
+	padding: 50px 15px 0;
+}
+.download-platform:nth-child(n+3){
+	border-left: 0;
+}
+.platforms__h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.platforms__h3:after{
+	content: '';
+	position: relative;
+	display: block;
+	width: 31px;
+	border-top: 2px solid #fd452c;
+	margin: 19px auto 0;
+}
+.MMA__description{
+	font-size: 14px;
+}
+.MMA__addition{
+	font-size: 11px;
+}
+.btn__white{
+	color: #fff;
+	border: 2px solid #fff;
+	line-height: 36px;
+}
+.download-platform .btn__white{
+	display: none;
+	margin-top: 30px;
+}
+.download-platform:hover{
+	background: #fd452c;
+	color: #fff;
+}
+.download-platform:hover .btn__white{
+	display: inline-block;
+}
+.download-platform:hover .MMA__addition{
+	display: none;
+}
+.download-platform:hover .platforms__h3:after{
+	border-top: 2px solid #fff;
+}
+.platforms__icn{
+	display: block;
+	width: 90px;
+	height: 66px;
+	margin: 0 auto 40px;
+}
+.MMA-pro__icn{
+	background: url(../img/mma-pro.png) no-repeat;
+}
+.MMA-web__icn{
+	background: url(../img/mma-web.png) no-repeat;
+}
+.MMA-mobile__icn{
+	background: url(../img/mma-mob.png) no-repeat;
+}
+.MetaTrader__icn{
+	display: block;
+	width: 59px;
+	height: 66px;
+	background: url(../img/meta-trader.png) no-repeat center;
+	margin: 0 auto 40px;
+}
+.tab-2,.tab-3,.tab-4,.tab-5{
+	display: none;
+}
+/*---tab-2*/
+.STA__clarification{
+	height: 410px;
+	background: url(../img/baner-2.jpg) no-repeat;
+	color: #fff;
+	font-size: 15px;
+	padding: 30px 40px 40px;
+	margin-bottom: 40px;
+}
+.STA__clarification__h2{
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0;
+}
+.STA__clarification__h2:after{
+	content: '';
+	display: block;
+	width: 210px;
+	border-top: 3px solid #fff;
+	margin: 30px 0 34px;
+}
+.STA__clarification p{
+	line-height: 24px;
+	margin: 10px 0;
+}
+/*--- STA__scheme ---*/
+.STA__scheme{
+	height: 477px;
+	border: 1px dashed #ee2000;
+	margin-bottom: 40px;
+}
+.block{
+	position: relative;
+	float: left;
+	width: 322px;
+	text-align: center;
+}
+.block-1 h2{
+	font-size: 30px;
+	font-family: 'Conv_Micracb';
+	color: #000;
+	margin-top: 96px;
+	line-height: 96px;
+}
+.arrow-red:after{
+	content: '';
+	position: absolute;
+	top: 126px;
+	left: 98%;
+	margin: auto;
+	display: block;
+	border-left: 20px solid #ee2000;
+	border-top: 112px solid transparent;
+	border-bottom: 112px solid transparent;
+}
+.block-2 h2{
+	font-size: 23px;
+	color: #000;
+	margin-bottom: 35px;
+	font-weight: 500;
+}
+.block-2 p{
+	font-size: 18px;
+	padding: 0 30px;
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+.block-2 .MMA-pro__icn{
+	margin-bottom: 10px;
+}
+.block-3 h2{
+	font-size: 36px;
+	color: #000;
+	margin: 50px 0 30px;
+	font-weight: 500;
+}
+.block-3 p{
+	font-size: 18px;
+	line-height: 40px;
+	padding: 0 30px;
+}
+/*---other-services*/
+.services{
+	float: left;
+	width: 322px;
+}
+.other-services{
+	text-align: center;
+}
+.other-services__h2{
+	font-size: 33px;
+	color: #000;
+	font-weight: 500;
+}
+.other-services__h2:after{
+	content: '';
+	display: block;
+	width: 126px;
+	border-top: 1px solid #000;
+	margin: 10px auto 30px;
+}
+.other-services h3{
+	font-size: 20px;
+	font-weight: 500;
+}
+.other-services p{
+	padding: 0 20px;
+	margin: 10px 0;
+}
+.servies__icn{
+	display: block;
+	width: 66px;
+	height: 60px;
+	margin: 0 auto 10px;
+}
+.servies__icn-1{
+	background: url(../img/monitor.png) no-repeat center;
+}
+.servies__icn-2{
+	background: url(../img/clients.png) no-repeat center;
+}
+.servies__icn-3{
+	background: url(../img/cogwheel-2.png) no-repeat center;
 }
 
-.download-platform {
-    float: left;
-    width: 25%;
-    height: 460px;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #fd452c;
-    padding: 50px 15px 0;
-}
 
-.download-platform:nth-child(n+3) {
-    border-left: 0;
-}
+/*---STA-tab tab-4*/
+.tab-4 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-.platforms__h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
+.refill, .withdrawal {
+  border-bottom: 1px dashed #ee2000;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
 
-.platforms__h3:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 31px;
-    border-top: 2px solid #fd452c;
-    margin: 19px auto 0;
-}
+.refill:last-child, .withdrawal:last-child {
+  border-bottom: 0;
+  margin-bottom: 0; }
 
-.MMA__description {
+.refill div, .withdrawal div {
+  float: left; }
+
+.refill__icn {
+  width: 150px; }
+
+.refill__icn i {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  margin: 0 auto; }
+
+.refill__method {
+  width: 420px;
+  padding-right: 20px; }
+
+.refill__method__name {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0; }
+
+.refill__method__description {
+  font-size: 14px;
+  margin: 10px 0 0; }
+
+.refill__method__description em {
+  font-weight: 400;
+  font-size: 12px; }
+
+.refill__commission, .refill__currency, .refill__time {
+  font-size: 13px;
+  padding: 0 20px; }
+
+.refill__commission {
+  width: 150px; }
+
+.refill__currency {
+  width: 120px; }
+
+.withdrawal .refill__commission {
+  width: 205px;
+  padding-left: 0px;
+  padding-right: 15px; }
+
+.withdrawal .refill__currency {
+  width: 65px; }
+
+.refill__time {
+  width: 126px; }
+
+.refill__icn__bank {
+  background: url(../img/logos/bank.jpg) no-repeat center top; }
+
+.refill__icn__credit-card {
+  background: url(../img/logos/credit-card.png) no-repeat center top; }
+
+.refill__icn__china-union-pay {
+  background: url(../img/logos/china-union-pay.png) no-repeat center top; }
+
+.refill__icn__psb {
+  background: url(../img/logos/psb.png) no-repeat center top; }
+
+.refill__icn__alfa-bank {
+  background: url(../img/logos/alfa-bank.png) no-repeat center top; }
+
+.refill__icn__skrill-moneybookers {
+  background: url(../img/logos/skrill-moneybookers.png) no-repeat center top; }
+
+.refill__icn__giropay-skrill {
+  background: url(../img/logos/giropay-skrill.gif) no-repeat center top; }
+
+.refill__icn__ideal-skrill {
+  background: url(../img/logos/ideal-skrill.gif) no-repeat center top; }
+
+.refill__icn__dankort-skrill {
+  background: url(../img/logos/dankort-skrill.gif) no-repeat center top; }
+
+.refill__icn__nordea-skrill {
+  background: url(../img/logos/nordea-skrill.gif) no-repeat center top; }
+
+.refill__icn__poli-skrill {
+  background: url(../img/logos/poli-skrill.gif) no-repeat center top; }
+
+.refill__icn__moneta-ru {
+  background: url(../img/logos/moneta-ru.png) no-repeat center top; }
+
+.refill__icn__qiwi {
+  background: url(../img/logos/qiwi.png) no-repeat center top; }
+
+.refill__icn__webmoney {
+  background: url(../img/logos/webmoney.png) no-repeat center top; }
+
+.refill__icn__yandex-money {
+  background: url(../img/logos/yandex-money.png) no-repeat center top; }
+
+.refill__icn__p24-skrill {
+  background: url(../img/logos/p24-skrill.gif) no-repeat center top; }
+
+.refill__icn__neteller-wallet {
+  background: url(../img/logos/neteller-wallet.png) no-repeat center top; }
+
+.refill__icn__rp {
+  background: url(../img/logos/rp.png) no-repeat center top; }
+
+.refill__icn__b2b {
+  background: url(../img/logos/b2b.png) no-repeat center top; }
+
+.refill__icn__finam {
+  background: url(../img/logos/finam.png) no-repeat center top; }
+
+.refill__icn__sct {
+  background: url(../img/logos/swift-currency-transfers.png) no-repeat center top; }
+
+.STA-table {
+  margin-bottom: 40px; }
+
+.STA-table thead th {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  vertical-align: middle;
+  padding: 10px 8px; }
+
+.STA-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 12px; }
+
+.STA-table p {
+  margin: 8px 0 0; }
+
+.STA-table a {
+  color: #ee2000; }
+
+.STA-table a:hover {
+  text-decoration: none; }
+
+.STA-table em {
+  font-weight: 300; }
+
+.conditions {
+  width: 100%; }
+
+.conditions th {
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.conditions th:nth-child(1) {
+  width: 200px; }
+
+.conditions th:nth-child(2) {
+  width: 450px; }
+
+.conditions th:nth-child(3) {
+  width: 160px; }
+
+.conditions th:nth-child(4) {
+  width: 160px; }
+
+.conditions__turnover thead td {
+  background: #efefef;
+  font-weight: 500; }
+
+.conditions .del {
+  text-decoration: line-through;
+  color: #ee2000;
+  margin-right: 5px; }
+
+.conditions .note {
+  display: inline-block;
+  background: #f1981b;
+  color: #fff;
+  padding: 2px 5px; }
+
+.currency-market {
+  width: 100%;
+  text-align: left; }
+
+.limit {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0; }
+
+.bg-pink {
+  background: #ffeeee; }
+
+.STA-table-explanation {
+  font-size: 14px;
+  font-style: italic;
+  padding: 20px 0;
+  margin-bottom: 30px; }
+
+.STA-table-addition {
+  font-size: 14px;
+  padding: 20px 0;
+  margin-bottom: 40px; }
+
+.STA-table__h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 10px; }
+
+.STA-table__h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+/*---- PAGE ROX ---*/
+.rox * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.rox__banner {
+  position: relative;
+  height: 345px;
+  background: url(../img/baner-3.jpg) no-repeat;
+  color: #fff;
+  padding: 10px 30px 30px;
+  margin: 20px 0 40px; }
+  .rox__banner__h1 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  .rox__banner .btn_transparent {
+    color: #fff; }
+  .rox__banner__descr {
+    width: 430px;
     font-size: 14px;
-}
+    line-height: 27px; }
+  .rox__banner__price {
+    position: absolute;
+    top: 160px;
+    left: 508px;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase; }
+    .rox__banner__price span {
+      display: inline-block; }
+    .rox__banner__price .new-price {
+      position: relative;
+      top: -5px;
+      font-size: 30px;
+      margin-bottom: 5px; }
+    .rox__banner__price .old-price {
+      font-size: 18px;
+      margin-left: 10px; }
+  .rox__banner__feature {
+    position: absolute;
+    top: 65px;
+    right: 205px;
+    width: 135px;
+    font-size: 12px;
+    line-height: 16px; }
 
-.MMA__addition {
-    font-size: 11px;
-}
+.rox-prem {
+  font-size: 36px; }
 
-.btn__white {
-    color: #fff;
-    border: 2px solid #fff;
-    line-height: 36px;
-}
+.rox__advantage__content {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 40px; }
 
-.download-platform .btn__white {
-    display: none;
-    margin-top: 30px;
-}
+.rox__icn {
+  width: 79px;
+  height: 89px;
+  display: block;
+  margin: 0 auto; }
 
-.download-platform:hover {
-    background: #fd452c;
-    color: #fff;
-}
+.rox__advantage__icn-1 {
+  background: url(../img/star-rox.png) no-repeat center; }
 
-.download-platform:hover .btn__white {
+.rox__advantage__icn-2 {
+  background: url(../img/document.png) no-repeat center; }
+
+.rox__advantage__icn-3 {
+  background: url(../img/commission.png) no-repeat center; }
+
+.rox__advantage__icn-4 {
+  background: url(../img/umbrella.png) no-repeat center; }
+
+.rox__advantages__name {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.roz__advantages__addition {
+  font-size: 14px;
+  margin: 0; }
+  .roz__advantages__addition span {
+    display: block;
+    margin-top: 10px; }
+
+.action {
+  padding: 50px 30px; }
+  .action__descr {
+    float: left;
+    width: 585px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333; }
+  .action__min-sum {
+    float: right;
+    border: 2px dashed #ee2000;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 18px; }
+  .action__addition {
+    font-size: 18px;
+    clear: both;
+    padding-top: 40px; }
+
+.rox__table-price {
+  width: 100%;
+  font-size: 16px;
+  margin: 50px 0; }
+
+.rox__table-price td {
+  padding: 10px 8px; }
+  .rox__table-price td span {
+    font-weight: 700; }
+
+.promotional-prices {
+  font-size: 18px;
+  padding: 0 10px; }
+  .promotional-prices:last-child {
+    margin-bottom: 50px; }
+  .promotional-prices span {
     display: inline-block;
-}
+    background: #f90;
+    color: #fff;
+    padding: 2px 5px; }
 
-.download-platform:hover .MMA__addition {
-    display: none;
-}
+.dealings {
+  background: url(../img/bg-rox.jpg) no-repeat;
+  background-size: cover;
+  padding: 60px 0 10px; }
+  .dealings__table {
+    width: 100%;
+    font-size: 16px;
+    text-align: left; }
+    .dealings__table td, .dealings__table th {
+      padding: 10px 8px; }
+    .dealings__table td span {
+      font-weight: 700; }
+  .dealings__attention {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 80px 0; }
+    .dealings__attention a {
+      color: #ee2000; }
+      .dealings__attention a:hover {
+        text-decoration: none; }
 
-.download-platform:hover .platforms__h3:after {
-    border-top: 2px solid #fff;
-}
+.rox__address {
+  float: left;
+  width: 430px;
+  font-style: normal;
+  margin: 100px 0; }
+  .rox__address h3 {
+    font-size: 24px; }
+  .rox__address__phone, .rox__address__email a {
+    font-size: 20px; }
 
-.platforms__icn {
+.rox-block-info {
+  float: right;
+  width: 255px;
+  text-align: center;
+  border: 1px solid #555;
+  padding: 35px 35px 0;
+  margin: 40px 0; }
+  .rox-block-info .btn {
+    width: 186px;
+    font-weight: 500;
+    margin-bottom: 13px; }
+  .rox-block-info .btn_transparent {
+    color: #444; }
+  .rox-block-info .name {
+    font-family: 'Conv_swiss';
+    font-size: 30px;
+    color: #ee2000; }
+  .rox-block-info .read-more {
+    color: #444; }
+  .rox-block-info .read-more:hover {
+    text-decoration: none;
+    color: #ee2000; }
+  .rox-block-info .brand-name {
+    color: #444;
+    font-weight: 500; }
+
+.bg-gray {
+  background: #efefef; }
+
+.other-prices {
+  float: left;
+  width: 50%;
+  font-size: 16px;
+  padding: 20px 15px 40px; }
+  .other-prices p {
+    font-weight: 500; }
+  .other-prices ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 15px; }
+  .other-prices ul li {
+    margin-bottom: 15px; }
+  .other-prices ul li:before {
+    content: '•';
+    color: #ee2000;
+    padding-right: 10px; }
+
+#list-exchanges {
+  font-size: 16px;
+  color: #ee2000; }
+  #list-exchanges:hover {
+    text-decoration: none; }
+
+.list-exchanges h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin: 15px 0; }
+
+.list-exchanges table {
+  width: 100%;
+  background: #fff;
+  font-size: 14px; }
+  .list-exchanges table td {
+    border: 1px solid #e1e1e1;
+    padding: 8px; }
+  .list-exchanges table td:nth-child(1) {
+    width: 30%; }
+  .list-exchanges table td:nth-child(2) {
+    width: 20%; }
+  .list-exchanges table td:nth-child(3) {
+    width: 50%; }
+
+.list-exchanges {
+  display: none; }
+
+/*----- PAGE WORLD FUTURES -----*/
+.futures * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.futures-banner {
+  height: 345px;
+  background: url(../img/baner-4.jpg) no-repeat;
+  color: #fff;
+  padding: 10px 30px 30px;
+  margin: 20px 0 50px; }
+  .futures-banner__h1 {
+    font-size: 18px;
+    text-transform: uppercase; }
+    .futures-banner__h1 span {
+      display: block;
+      font-size: 36px; }
+      .futures-banner__h1 span:last-child {
+        font-weight: bold; }
+
+.futures-banner__description {
+  font-size: 14px;
+  width: 320px;
+  line-height: 27px;
+  margin-bottom: 30px; }
+
+.offer__h2, .offer__h3 {
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-weight: 400; }
+
+.offer__h2 {
+  font-size: 20px;
+  font-weight: 500; }
+
+.offer__h3 {
+  width: 570px;
+  font-size: 18px;
+  margin: 0 auto; }
+
+.wr-option {
+  padding: 40px 0 60px;
+  margin-bottom: 50px; }
+
+.option {
+  width: 460px;
+  border: 3px solid #ee2000;
+  -webkit-border-radius: 17px;
+          border-radius: 17px;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px; }
+
+.option-left {
+  position: relative;
+  float: left; }
+  .option-left:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 220px;
+    display: block;
+    width: 55px;
+    border-bottom: 2px dotted #ee2000; }
+
+.option-right {
+  float: right;
+  position: relative;
+  top: 60px; }
+
+.option__read-more {
+  display: block;
+  color: #000;
+  margin: 0 auto 15px; }
+  .option__read-more:hover {
+    color: #ee2000;
+    text-decoration: none; }
+
+.option__h3 {
+  width: 220px;
+  font-weight: 500;
+  margin: 0 auto 15px; }
+
+.option__descr {
+  line-height: 27px;
+  margin-bottom: 15px; }
+
+.futures-addition {
+  padding: 40px 0; }
+
+.futures-addition p {
+  width: 500px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto 40px; }
+  .futures-addition p:last-child {
+    margin-bottom: 0; }
+
+.advantages-derivatives {
+  text-align: center;
+  padding: 30px 0; }
+
+.adv-der__h2 {
+  width: 300px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  margin: 40px auto; }
+
+.adv-der__block {
+  display: inline-block;
+  width: 33%;
+  font-size: 16px;
+  padding: 0 50px;
+  vertical-align: top; }
+
+.adv-der__descr {
+  margin-bottom: 50px;
+  margin-top: 10px; }
+
+.adv-der__icn {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; }
+
+.adv-der__icn-1 {
+  background: url(../img/check.png) no-repeat center/70%; }
+
+.adv-der__icn-2 {
+  background: url(../img/magnifier.png) no-repeat center/70%; }
+
+.adv-der__icn-3 {
+  background: url(../img/chart.png) no-repeat center/70%; }
+
+.adv-der__icn-4 {
+  background: url(../img/house.png) no-repeat center/70%; }
+
+.adv-der__icn-5 {
+  background: url(../img/calculator.png) no-repeat center/70%; }
+
+.adv-der__icn-6 {
+  background: url(../img/date.png) no-repeat center/70%; }
+
+.CQG {
+  background: url(../img/bg-futures.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 30px 0; }
+  .CQG__h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px 0; }
+  .CQG__h3 {
+    width: 440px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 40px auto 70px; }
+  .CQG__block {
+    display: inline-block;
+    width: 33%;
+    padding: 0 30px;
+    vertical-align: top;
+    margin-bottom: 40px; }
+
+.CQG__icn {
+  display: block;
+  width: 90px;
+  height: 80px;
+  margin: 0 auto; }
+  .CQG__icn-1 {
+    background: url(../img/graph.png) no-repeat center/70%; }
+  .CQG__icn-2 {
+    background: url(../img/plane-table.png) no-repeat center/70%; }
+  .CQG__icn-3 {
+    background: url(../img/coins.png) no-repeat center/70%; }
+  .CQG__icn-4 {
+    background: url(../img/plan.png) no-repeat center/70%; }
+  .CQG__icn-5 {
+    background: url(../img/program.png) no-repeat center/70%; }
+  .CQG__icn-6 {
+    background: url(../img/briefcase.png) no-repeat center/70%; }
+
+.CQG-screenshots {
+  position: relative;
+  height: 830px; }
+  .CQG-screenshots img {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    opacity: 0; }
+    .CQG-screenshots img.active {
+      opacity: 1; }
+  .CQG-screenshots__points-1, .CQG-screenshots__points-2 {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 970px;
+    height: 605px;
+    z-index: 1; }
+  .CQG-screenshots__points-1, .CQG-screenshots__points-2 {
+    display: none; }
+  .CQG-screenshots__points__icn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url(../img/mark.png) no-repeat center;
+    cursor: pointer;
+    z-index: 2; }
+  .CQG-screenshots__points__item {
+    position: absolute; }
+  .CQG-screenshots__points__item-1 {
+    top: 10px;
+    left: 290px; }
+  .CQG-screenshots__points__item-2 {
+    top: 10px;
+    left: 706px; }
+  .CQG-screenshots__points__item-3 {
+    top: 148px;
+    left: 89px; }
+  .CQG-screenshots__points__item-4 {
+    top: 300px;
+    left: 215px; }
+  .CQG-screenshots__points__item-5 {
+    top: 270px;
+    left: 275px; }
+  .CQG-screenshots__points__item-6 {
+    top: 270px;
+    left: 350px; }
+  .CQG-screenshots__points__item-7 {
+    top: 270px;
+    left: 650px; }
+  .CQG-screenshots__points__item-8 {
+    top: 284px;
+    left: 720px; }
+  .CQG-screenshots__points__item-9 {
+    top: 508px;
+    left: 288px; }
+  .CQG-screenshots__points__item-10 {
+    top: 15px;
+    left: 15px; }
+  .CQG-screenshots__points__item-11 {
+    top: 15px;
+    left: 130px; }
+  .CQG-screenshots__points__item-12 {
+    top: 15px;
+    left: 550px; }
+  .CQG-screenshots__points__item-13 {
+    top: 318px;
+    left: 15px; }
+  .CQG-screenshots__points__item-14 {
+    top: 318px;
+    left: 310px; }
+  .CQG-screenshots__points__item-15 {
+    top: 500px;
+    left: 660px; }
+  .CQG-screenshots__points__descr {
+    position: relative;
+    top: -125px;
+    left: -78px;
+    width: 300px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 16px 20px;
+    -webkit-box-shadow: 0 0 3px #444;
+            box-shadow: 0 0 3px #444;
+    display: none; }
+    .CQG-screenshots__points__descr:after {
+      position: absolute;
+      top: 100%;
+      left: 90px;
+      content: '';
+      display: block;
+      border-left: 15px solid transparent;
+      border-top: 15px solid #999; }
+    .CQG-screenshots__points__descr:before {
+      position: absolute;
+      top: 100%;
+      left: 91px;
+      content: '';
+      display: block;
+      border-left: 13px solid transparent;
+      border-top: 13px solid #fff;
+      z-index: 3; }
+
+.visible {
+  display: block; }
+
+.switching {
+  width: 105px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -52px; }
+  .switching a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #000;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 30px 15px; }
+    .switching a.active {
+      background: #000; }
+
+.Just2Trade-info {
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+  margin-bottom: 80px; }
+  .Just2Trade-info p {
+    margin-bottom: 40px; }
+
+/*----- PAGE ADVISORE MANAGEMENT -----*/
+.management * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.management {
+  padding-top: 40px; }
+  .management .tabs__items li {
+    margin-right: 14px; }
+  .management .tabs__items li:last-child {
+    margin-right: 0; }
+  .management .tabs__items a {
+    height: inherit;
+    line-height: 32px;
+    padding: 5px 17px; }
+    .management .tabs__items a:hover .under-line:before {
+      border-top: 1px solid #fff; }
+    .management .tabs__items a.active .under-line:before {
+      border-top: 1px solid #fff; }
+    .management .tabs__items a span {
+      display: block; }
+      .management .tabs__items a span:before {
+        content: '';
+        position: relative;
+        top: 2px;
+        display: block;
+        width: 100px;
+        border-top: 1px solid #000;
+        margin: 0 auto; }
+
+.adv-manag-banner {
+  background: url(../img/banner-5.jpg) no-repeat; }
+
+.management-banner {
+  height: 345px;
+  color: #fff;
+  padding: 15px 35px 35px;
+  margin-bottom: 40px; }
+  .management-banner__h1 {
+    font-size: 36px;
+    text-transform: uppercase; }
+    .management-banner__h1 span {
+      display: block;
+      font-size: 20px; }
+  .management-banner__descr {
+    width: 720px;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 25px 0 30px; }
+  .management-banner .btn_transparent {
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 50px; }
+  .management-banner__examples {
+    color: #fff; }
+    .management-banner__examples:hover {
+      color: #ee2000;
+      text-decoration: none; }
+    .management-banner__examples i {
+      display: inline-block;
+      width: 77px;
+      height: 59px;
+      background: url(../img/pdf-file.png) no-repeat;
+      vertical-align: middle;
+      margin-left: 10px; }
+
+.various-solutions {
+  text-align: center;
+  padding: 0 0 20px; }
+  .various-solutions__h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 40px; }
+  .various-solutions__block {
+    display: inline-block;
+    width: 33%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    vertical-align: top; }
+  .various-solutions h3 {
+    margin-bottom: 10px; }
+  .various-solutions__icn {
     display: block;
     width: 90px;
-    height: 66px;
-    margin: 0 auto 40px;
-}
+    height: 90px;
+    margin: 0 auto; }
+  .various-solutions__icn-1 {
+    background: url(../img/shield.png) no-repeat center/70%; }
+  .various-solutions__icn-2 {
+    background: url(../img/table-check.png) no-repeat center/70%; }
+  .various-solutions__icn-3 {
+    background: url(../img/graf-up.png) no-repeat center/70%; }
+  .various-solutions__icn-4 {
+    background: url(../img/check-2.png) no-repeat center/70%; }
+  .various-solutions__icn-5 {
+    background: url(../img/moneybag-2.png) no-repeat center/70%; }
 
-.MMA-pro__icn {
-    background: url(../img/mma-pro.png) no-repeat;
-}
-
-.MMA-web__icn {
-    background: url(../img/mma-web.png) no-repeat;
-}
-
-.MMA-mobile__icn {
-    background: url(../img/mma-mob.png) no-repeat;
-}
-
-.MetaTrader__icn {
-    display: block;
-    width: 59px;
-    height: 66px;
-    background: url(../img/meta-trader.png) no-repeat center;
-    margin: 0 auto 40px;
-}
-
-.tab-2,.tab-3,.tab-4,.tab-5 {
-    display: none;
-}
-
-/*---tab-2*/
-.STA__clarification {
-    height: 410px;
-    background: url(../img/baner-2.jpg) no-repeat;
-    color: #fff;
-    font-size: 15px;
-    padding: 30px 40px 40px;
-    margin-bottom: 40px;
-}
-
-.STA__clarification__h2 {
-    font-size: 36px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 0;
-}
-
-.STA__clarification__h2:after {
-    content: '';
-    display: block;
-    width: 210px;
-    border-top: 3px solid #fff;
-    margin: 30px 0 34px;
-}
-
-.STA__clarification p {
-    line-height: 24px;
-    margin: 10px 0;
-}
-
-/*---STA__scheme*/
-.STA__scheme {
-    height: 477px;
-    border: 1px dashed #ee2000;
-    margin-bottom: 40px;
-}
-
-.block {
-    position: relative;
-    float: left;
-    width: 322px;
-    text-align: center;
-}
-
-.block-1 h2 {
+.management-advantage {
+  margin: 40px 0; }
+  .management-advantage__h2 {
     font-size: 30px;
-    font-family: 'Conv_Micracb';
     color: #000;
-    margin-top: 96px;
-    line-height: 96px;
-}
-
-.arrow-red:after {
-    content: '';
-    position: absolute;
-    top: 126px;
-    left: 98%;
-    margin: auto;
-    display: block;
-    border-left: 20px solid #ee2000;
-    border-top: 112px solid transparent;
-    border-bottom: 112px solid transparent;
-}
-
-.block-2 h2 {
-    font-size: 23px;
-    color: #000;
-    margin-bottom: 35px;
     font-weight: 500;
-}
-
-.block-2 p {
-    font-size: 18px;
-    padding: 0 30px;
-    margin-top: 10px;
-    margin-bottom: 35px;
-}
-
-.block-2 .MMA-pro__icn {
-    margin-bottom: 10px;
-}
-
-.block-3 h2 {
-    font-size: 36px;
-    color: #000;
-    margin: 50px 0 30px;
-    font-weight: 500;
-}
-
-.block-3 p {
-    font-size: 18px;
-    line-height: 40px;
-    padding: 0 30px;
-}
-
-/*---other-services*/
-.services {
-    float: left;
-    width: 322px;
-}
-
-.other-services {
     text-align: center;
-}
+    margin-bottom: 40px; }
+  .management-advantage__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .management-advantage__list li {
+      position: relative;
+      width: 640px;
+      height: 145px;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      font-size: 20px;
+      margin-bottom: 35px;
+      padding: 0 30px;
+      display: table-cell; }
+      .management-advantage__list li span {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        display: block;
+        width: 440px; }
+    .management-advantage__list li:nth-child(odd) {
+      float: right;
+      background: #ee2000;
+      color: #fff; }
+      .management-advantage__list li:nth-child(odd):before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 70px;
+        display: block;
+        width: 140px;
+        height: 104px;
+        border-top: 3px dotted #ee2000;
+        border-left: 3px dotted #ee2000; }
+    .management-advantage__list li:nth-child(even) {
+      float: left;
+      background: #fff;
+      border: 3px solid #ee2000; }
+      .management-advantage__list li:nth-child(even):after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 70px;
+        display: block;
+        width: 140px;
+        height: 104px;
+        border-top: 3px dotted #ee2000;
+        border-right: 3px dotted #ee2000; }
+    .management-advantage__list li:last-child:after {
+      display: none; }
+    .management-advantage__list li:nth-child(odd) span {
+      right: 30px; }
+    .management-advantage__list li:nth-child(even) i {
+      right: 30px; }
+  .management-advantage__icn {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px; }
 
-.other-services__h2 {
-    font-size: 33px;
+.adv-manag-advantage__icn-1 {
+  background: url(../img/consultant.png) no-repeat center; }
+
+.adv-manag-advantage__icn-2 {
+  background: url(../img/manager.png) no-repeat center; }
+
+.adv-manag-advantage__icn-3 {
+  background: url(../img/check-white.png) no-repeat center; }
+
+.adv-manag-advantage__icn-4 {
+  background: url(../img/moneybag-3.png) no-repeat center; }
+
+.adv-manag-advantage__icn-5 {
+  background: url(../img/shield-white.png) no-repeat center; }
+
+.adv-manag-advantage__icn-6 {
+  background: url(../img/print.png) no-repeat center; }
+
+.platform-rox {
+  padding: 40px 0; }
+  .platform-rox__h3 {
+    border-bottom: 2px dotted #000;
+    font-size: 18px;
     color: #000;
     font-weight: 500;
-}
+    margin-bottom: 20px;
+    padding-bottom: 30px; }
+  .platform-rox__table {
+    width: 100%;
+    margin-bottom: 30px; }
+    .platform-rox__table td {
+      padding: 10px 0; }
+  .platform-rox__clarification {
+    border-top: 2px dotted #000;
+    padding: 30px 0; }
+    .platform-rox__clarification p {
+      line-height: 26px;
+      margin: 0; }
+      .platform-rox__clarification p a {
+        color: #ee2000;
+        text-decoration: none; }
+        .platform-rox__clarification p a:hover {
+          text-decoration: underline; }
+    .platform-rox__clarification span {
+      color: #ee2000; }
 
-.other-services__h2:after {
-    content: '';
+/*----- PAGE TRUST MANAGEMENT -----*/
+.trust-manag-banner {
+  background: url(../img/banner-6.jpg) no-repeat; }
+  .trust-manag-banner span.fz-18 {
+    font-size: 18px; }
+  .trust-manag-banner .management-banner__descr {
+    margin: 20px 0; }
+
+.trust-manag-commissions {
+  width: 900px;
+  font-size: 30px;
+  color: #fff;
+  padding: 40px 0;
+  margin: 40px auto; }
+
+.bg-taupe {
+  background: #959595; }
+
+.trust-manag-advantage__icn-1 {
+  background: url(../img/document-2.png) no-repeat center; }
+
+.trust-manag-advantage__icn-2 {
+  background: url(../img/coins-red.png) no-repeat center; }
+
+.trust-manag-advantage__icn-3 {
+  background: url(../img/check-3.png) no-repeat center; }
+
+.trust-manag-advantage__icn-4 {
+  background: url(../img/moneybag-4.png) no-repeat center; }
+
+.trust-manag-advantage__icn-5 {
+  background: url(../img/clock.png) no-repeat center; }
+
+.trust-manag-advantage ul li:nth-child(2) {
+  height: 180px; }
+  .trust-manag-advantage ul li:nth-child(2):after {
+    height: 140px; }
+
+.trust-manag-advantage ul li:last-child:before {
+  display: none; }
+
+.trust-manag-price {
+  font-size: 14px;
+  padding: 40px 0 40px; }
+  .trust-manag-price:first-child {
+    border-bottom: 2px dotted #000; }
+  .trust-manag-price span {
     display: block;
-    width: 126px;
-    border-top: 1px solid #000;
-    margin: 10px auto 30px;
-}
+    margin-bottom: 10px; }
 
-.other-services h3 {
-    font-size: 20px;
-    font-weight: 500;
-}
+.trust-manag-price__name {
+  float: left;
+  width: 370px; }
 
-.other-services p {
-    padding: 0 20px;
-    margin: 10px 0;
-}
+.trust-manag-price__value {
+  float: right;
+  width: 600px; }
 
-.servies__icn {
-    display: block;
-    width: 66px;
-    height: 60px;
-    margin: 0 auto 10px;
+/*---PAGE VIDEO SEMINARS---*/
+.video-seminars *{
+	box-sizing: border-box;
 }
-
-.servies__icn-1 {
-    background: url(../img/monitor.png) no-repeat center;
+.video-seminars{
+	padding: 40px 0;
 }
-
-.servies__icn-2 {
-    background: url(../img/clients.png) no-repeat center;
+.wr-video-data{
+	display: inline-block;
+	margin: 0 10px 20px;
+	box-shadow: 1px 1px 4px #777;
+	vertical-align: top;
 }
-
-.servies__icn-3 {
-    background: url(../img/cogwheel-2.png) no-repeat center;
+.img-video{
+	position: relative;
+	width: 294px;
+	height: 163px;
+	overflow: hidden;
+}
+.img-video img{
+	position: relative;
+	top: -30px;
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 840px;
+	height: 477px;
+	border-radius: 6px;
+	border: 8px solid #fff;
+	background: #000;
+	z-index: 3600;
+}
+#backgroundIframe{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: url(../img/overlay.png);
+	z-index: 3500;
+}
+.arrow-play{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/icn-play-2.png) no-repeat center;
+	cursor: pointer;
+}
+.arrow-play:hover{
+	background: url(../img/icn-play-hover.png) no-repeat center;
+}
+.closeIcon{
+	position: fixed;
+	top: 4px;
+	right: 100px;
+	display: none;
+	width: 39px;
+	height: 39px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 21px;
+	border: 2px solid #ee2000;
+	background: #fff;
+	background-size: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 4000;
+}
+.closeIcon:hover{
+	background: #ee2000;
+	color: #fff;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.video__data{
+	position: relative;
+	width: 294px;
+	height: 137px;
+	background: #f0f0f0;
+	color: #444;
+	padding: 10px 15px;
+}
+.video__data p{
+	margin: 0;
+}
+.video__data .video__data__name{
+	font-size: 16px;
+	height: 85px;
+	font-weight: 500;
+	overflow: hidden;
+}
+.video__data__bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+}
+.video__data__date{
+	float: left;
+	font-size: 14px;
+}
+.video__data__date .calendar{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/calendar.png) no-repeat;
+	margin-right: 5px;
+}
+.video__data__category{
+	float: right;
+	font-size: 14px;
+	border-bottom: 1px dashed #444;
+}
+.video__data__category a{
+	color: #444;
+	text-decoration: none;
+}
+.video__data__category a:hover{
+	color: #ee2000;
+	border-bottom: 1px dashed #ee2000;
+}
+#menuListCategory{
+	position: fixed;
+	top: 50px;
+	left: 10px;
+	width: 220px;
+	height: 100%;
+	background: #777;
+	z-index: 4000;
+	display: none;
+	overflow: hidden;
+	overflow-y: scroll;
+	padding-bottom: 70px;
+}
+#menuListCategory p{
+	background: #777;
+	border-bottom: 1px solid #000;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+	cursor: pointer;
+}
+#menuListCategory p:hover{
+	color: #f90;
+	background: #000;
+}
+#videoPlayer{
+	display: none;
+}
+#videoPlayer__h2{
+	width: 220px;
+	height: 48px;
+	background: #fff;
+	border: 2px solid #ee2000;
+	color: #ee2000;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 0 0 10px;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+#videoPlayer__h2:hover{
+	color: #fff;
+	background: #ee2000;
+}
+#videoPlayer__h2:hover .arrow-dovn{
+	background: url(../img/arrow-dovn-hover.png);
+}
+#videoPlayer__h2:hover .arrow-up{
+	background: url(../img/arrow-up-hover.png);
+}
+.videoPlayer__panel{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background: #f0f0f0;
+	z-index: 3600;
+}
+.arrow-dovn,
+.arrow-up{
+	display: inline-block;
+	width: 15px;
+	height: 11px;
+	margin-left: 10px;
+}
+.arrow-dovn{
+	background: url(../img/arrow-down.png);
+}
+.arrow-up{
+	background: url(../img/arrow-up.png);
+}
+.no-scroll{
+	overflow: hidden;
+}
+#video-live{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 840px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.02em;
+	text-overflow: ellipsis;
+	margin: 0;
+	padding: 0 5px;
+	overflow: hidden;
+}
+.color-red{
+	color: #ee2000;
 }
